@@ -1,0 +1,314 @@
+/* paleta de colores */
+
+:root {
+    --color_1: #e6decf;
+    --color_2: #ba9c82;
+    --color_3: #997b66;
+    --color_4: #6c584c;
+    --color_5: #241407;
+}
+
+/* fuentes */
+
+@font-face {
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-family: "monserrat";
+}
+
+@font-face {
+    src: url("../fonts/Poppins-Regular.ttf");
+    font-family: "poppins";
+}
+
+/* banner slider */
+
+.sliders-caja {
+    width: 100%;
+    margin: 0;
+}
+
+.sliders {
+    overflow: hidden;
+}
+
+.sliders figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite;
+}
+
+.sliders figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+/* slide FELICES FIESTAS */
+
+.descuento {
+    font-family: 'Arvo';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descuento h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--color_3);
+}
+
+.caja-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.125rem;
+    position: relative;
+    overflow: hidden;
+    line-height: 4rem;
+    color: var(--color_5);
+}
+
+.texto-slide {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+}
+
+.texto-slide span {
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+    margin-top: 0;
+    color: var(--color_2);
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+
+    25% {
+        top: -4rem;
+    }
+
+    50% {
+        top: -8rem;
+    }
+
+    72.5% {
+        top: -12.25rem;
+    }
+}
+
+.info-caja {
+    width: 100%;
+    background-color: rgba(120, 120, 120, .3);
+}
+
+.info-triple {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.info-solo {
+    text-align: center;
+    width: 100%;
+}
+
+.info-solo i {
+    display: block;
+    margin: 20px;
+    font-size: 3rem;
+    color: #333;
+}
+
+.info-solo span {
+    font-size: 18px;
+}
+
+/* SECTION IMAGENES */
+
+.producto-caja {
+    width: 90%;
+    margin: auto;
+}
+
+.producto-caja h1 {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.producto-triple {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto-solo {
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+.producto-solo img {
+    height: 85%;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.producto-solo span {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 1.8rem;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    color: #825b46;
+    background-color: #e6decf;
+    text-shadow: 2px 2px rgba(3, 3, 3, .15);
+}
+
+/* reponsive */
+
+@media screen and (max-width: 1200px) {
+    
+    .producto-caja {
+        width: 100%;
+    }
+
+    .producto-solo {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    
+    .producto-caja h1 {
+        font-size: 1rem;
+    }
+    
+    .producto-solo,
+    .producto-solo img{
+        width: 250px;
+    }
+
+    .producto-solo span {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .producto-solo,
+    .producto-solo img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .info-solo {
+        padding: 0 30px;
+    }
+
+    .info-solo i {
+        margin: 10px;
+        font-size: 1rem;
+    }
+    
+    .info-solo span {
+        text-align: left;
+        font-size: 10px;
+    }
+    
+    .producto-caja {
+        width: 100%;
+    }
+    
+    .producto-triple {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .producto-solo {
+        padding: 20px;
+        margin-bottom: 70px;
+    }
+    
+    .producto-solo,
+    .producto-solo img{
+        width: 100px;
+    }
+
+    .producto-solo span {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+/* @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.125rem;
+    }
+
+    .caja-slide {
+        height: 2.6rem;
+        line-height: 2.125rem;
+    }
+
+    .texto-slide span {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .texto-slide {
+        animation: slide-mob 5s infinite;
+    }
+} */

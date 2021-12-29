@@ -1,0 +1,85 @@
+/* paleta de colores */
+
+:root {
+    --color_1: #e6decf;
+    --color_2: #ba9c82;
+    --color_3: #997b66;
+    --color_4: #6c584c;
+    --color_5: #241407;
+}
+
+/* fuentes */
+
+@font-face {
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-family: "monserrat";
+}
+
+@font-face {
+    src: url("../fonts/Poppins-Regular.ttf");
+    font-family: "poppins";
+}
+
+main {
+    margin: auto;
+    width: 80%;
+}
+
+.title-container h1 {
+    padding-top: 40px;
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color_2);
+}
+
+.title-container img {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+}
+
+.description-container {
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.description-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: var(--color_5);
+}
+
+.description-image {
+    display: flex;
+    justify-content: center;
+}
+
+.description-image div {
+    width: 600px;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: transform .5s;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, .5);
+}
+
+.description-image div img {
+    width: 100%;
+    transition: transform .5s;
+}
+
+.description-image div img:hover {
+    transform: scale(1.5);
+}
+
+.parrafo-container {
+    color: var(--color_5);
+    font-size: 20px;
+    text-align: justify;
+    margin:60px auto;
+}
+
+.parrafo-container span {
+    color: #825b46;
+}
