@@ -1,25 +1,3 @@
-/* paleta de colores */
-
-:root {
-  --color_1: #e6decf;
-  --color_2: #ba9c82;
-  --color_3: #997b66;
-  --color_4: #6c584c;
-  --color_5: #241407;
-}
-
-/* fuentes */
-
-@font-face {
-  src: url("../fonts/Montserrat-Regular.ttf");
-  font-family: "monserrat";
-}
-
-@font-face {
-  src: url("../fonts/Poppins-Regular.ttf");
-  font-family: "poppins";
-}
-
 .caja-boton {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -31,13 +9,13 @@
 
 .caja-boton button {
   padding: 16px 32px 13px;
-  background-color: transparent;
-  border: 1px solid #6c584c;
-  color: #6c584c;
-  font-family: "monserrat";
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #534e4a;
+  color: #534e4a;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  -webkit-transition: color 300ms ease, -webkit-transform 300ms ease;
   transition: color 300ms ease, -webkit-transform 300ms ease;
   transition: color 300ms ease, transform 300ms ease;
   transition: color 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
@@ -50,25 +28,29 @@
 
 .caja-boton button:hover + .item-boton,
 .caja-boton button:focus + .item-boton {
+  -webkit-transform: translateY(calc(-100% + 2px));
           transform: translateY(calc(-100% + 2px));
 }
 
 .caja-boton button:active {
+  -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 
 .caja-boton button:active + .item-boton {
+  -webkit-transform: translateY(calc(-100% + 2px)) scale(0.8);
           transform: translateY(calc(-100% + 2px)) scale(0.8);
 }
 
 .item-boton {
-  background-color: #6c584c;
+  background-color: #534e4a;
   height: calc(100% + 2px);
   width: 100%;
   position: absolute;
   bottom: calc(-100% - 2px);
   left: 0;
   z-index: -1;
+  -webkit-transition: -webkit-transform 300ms ease;
   transition: -webkit-transform 300ms ease;
   transition: transform 300ms ease;
   transition: transform 300ms ease, -webkit-transform 300ms ease;
