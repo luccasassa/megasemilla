@@ -66,6 +66,7 @@ main {
 
 .description-image div img {
     width: 100%;
+    height: 100%;
     transition: transform .5s;
 }
 
@@ -82,4 +83,52 @@ main {
 
 .parrafo-container span {
     color: #825b46;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .description-image div {
+        width: 550px;
+        transition: transform .5s;
+    }
+    
+    .description-image div img {
+        width: 100%;
+        height: 100%;
+        transition: transform .5s;
+
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .title-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .title-container img {
+        width: 150px;
+    }
+    
+    .description-container h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .description-image div {
+        width: 500px;
+    }
+
+    .title-container h1 {
+        font-size: 1rem;
+    }
+    
+    .title-container img {
+        width: 100px;
+    }
+    
+    .description-container h2 {
+        font-size: 15px;
+    }
 }

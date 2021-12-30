@@ -242,9 +242,9 @@ nav {
 /* FOOTER */
 
 footer {
-    padding: 10px 0 0 0;
-    background-color: var(--color_1);
     width: 100%;
+    padding: 30px 0 0 0;
+    background-color: var(--color_1);
 }
 
 /* títulos centrados */
@@ -266,11 +266,11 @@ footer {
 /* cajas centradas (contenido) */
 
 .footer-container-2 {
-    padding: 0 0 10px 0;
-
     display: grid;
     grid-template-columns:  repeat(3, 1fr);
     grid-template-rows:  repeat(1, 1fr);
+    
+    padding: 0 0 30px 0;
 }
 
 /* redes sociales */
@@ -365,7 +365,39 @@ footer {
     text-align: center;
 }
 
+/* botón whatsapp flotante */
+
+.whatsapp a {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp i {
+    margin-top: 10px;
+}
+
 /* RESPONSIVE */
+
+@media screen and (max-width: 1300px) {
+    nav {
+        width: 100%;
+    }
+    
+    .menu li {
+        font-size: .8rem;
+    }
+}
 
 @media screen and (max-width: 1080px) {
     header {
