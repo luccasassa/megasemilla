@@ -46,7 +46,7 @@
     overflow: hidden;
     border-right: 3px solid #241407;
     font-family: "poppins";
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 @keyframes typing {
@@ -60,6 +60,8 @@
         border-color: transparent;
     }
 }
+
+/* formulario datos */
 
 form {
     width: 40%;
@@ -96,4 +98,62 @@ form {
     top: -20px;
     color: var(--color_1);
     font-size: 12px;
+}
+
+.pie-registro {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.link {
+    color: inherit;
+    position: relative;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--color_3);
+}
+
+.link::before {
+    content: "Click";
+    font-size: 0.9em;
+    background: black;
+    color: white;
+    line-height: 1em;
+    padding: 0.2em 0.15em 0;
+    border-radius: 0.2em;
+    position: absolute;
+    top: -1.5em;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-65%, 20%) rotateZ(-1deg);
+    transition: 0.4s opacity cubic-bezier(0.33, 1, 0.68, 1), 0.4s transform cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.link:after {
+    content: "acá!";
+    position: absolute;
+    font-size: 0.9em;
+    background: black;
+    color: white;
+    line-height: 1em;
+    padding: 0.2em 0.15em 0;
+    border-radius: 0.2em;
+    top: -1.5em;
+    left: 50%;
+    opacity: 0;
+    transform: translate(45%, 20%) rotateZ(1deg);
+    transition: 0.4s opacity cubic-bezier(0.33, 1, 0.68, 1), 0.4s transform cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.link:hover::before {
+    opacity: 1;
+    transform: translatex(-75%) rotateZ(-3deg);
+}
+
+.link:hover::after {
+    opacity: 1;
+    transform: translatex(45%) rotateZ(3deg);
 }
