@@ -23,9 +23,7 @@
 
     <script src="https://kit.fontawesome.com/771a952c9e.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/sass/crear-cuenta/crear-cuenta.css">
-    <link rel="stylesheet" href="../assets/sass/boton-submit/submit.css">
+    <link rel="stylesheet" href="../assets/sass/main.css">
 
     <title>MEGASEMILLA - CREAR CUENTA</title>
 </head>
@@ -73,13 +71,13 @@
 
             <li> <a href="productos.html">PRODUCTOS</a>
                 <ul class="submenu">
-                    <li> <a href="#">CEREALES</a> </li>
-                    <li> <a href="#">FRUTOS DESHIDRATADOS</a> </li>
+                    <li> <a href="#">MIXES</a> </li>
                     <li> <a href="#">FRUTOS SECOS</a> </li>
-                    <li> <a href="#">HARINAS</a> </li>
-                    <li> <a href="#">LEGUMBRES</a> </li>
-                    <li> <a href="#">MIX</a> </li>
+                    <li> <a href="#">CEREALES Y DERIVADOS</a> </li>
+                    <li> <a href="#">GRANOLAS</a> </li>
+                    <li> <a href="#">PASAS</a> </li>
                     <li> <a href="#">SEMILLAS</a> </li>
+                    <li> <a href="#">OTROS</a> </li>
                 </ul>
             </li>
 
@@ -90,7 +88,7 @@
 
     <!-- cuerpo de la página -->
 
-    <main>
+    <main class="main-crear-cuenta">
 
         <div class="titulo">
             <h1>Crear cuenta</h1>
@@ -111,6 +109,11 @@
 
             <div class="dato">
                 <input type="text" required>
+                <label>Apellido</label>
+            </div>
+
+            <div class="dato">
+                <input type="text" required>
                 <label>Usuario</label>
             </div>
 
@@ -120,8 +123,18 @@
             </div>
 
             <div class="dato">
+                <input type="tel" required>
+                <label>Teléfono</label>
+            </div>
+
+            <div class="dato">
                 <input type="password" required>
                 <label>Contraseña</label>
+            </div>
+
+            <div class="dato">
+                <input type="password" required>
+                <label>Confirmar contraseña</label>
             </div>
 
             <!-- (sass) botón submit -->

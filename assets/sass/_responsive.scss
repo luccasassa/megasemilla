@@ -1,0 +1,650 @@
+@import "variables";
+
+
+/****************************** MAIN ******************************/
+/****************************** MAIN ******************************/
+/****************************** MAIN ******************************/
+
+
+@media screen and (max-width: 1300px) {
+    nav {
+        width: 100%;
+
+        .menu {
+            li {
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav {
+        .menu {
+            width: 90%;
+
+            li {
+                line-height: 0;
+                padding: 0;
+                font-size: 13px;
+                padding: 0;
+            }
+        }
+    }
+
+    main div {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    header {
+        .buscar {
+            input {
+                width: 150px;
+                padding: 5px;
+            }
+
+            button {
+                width: 20px;
+                padding: 0;
+            }
+        }
+
+        .banner {
+            img {
+                width: 80%;
+            }
+        }
+
+        .carrito-cuenta {
+
+            .carrito,
+            .cuenta {
+                padding: 5px 0;
+                font-size: 12px;
+            }
+        }
+    }
+
+    nav {
+        position: relative;
+
+        .menu {
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                line-height: 0;
+                padding: 0;
+                font-size: 12px;
+                padding: 0;
+
+                .submenu {
+                    li {
+                        a {
+                            font-size: 10px;
+                            padding: 0;
+                            font-weight: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer-container-1 {
+            div {
+                span {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .footer-container-2 {
+            ul {
+                li {
+                    a {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .footer-pagos {
+                img {
+                    width: 30px;
+                }
+            }
+        }
+
+        .copy {
+            font-size: 10px;
+        }
+    }
+
+    main {
+        div {
+            p {
+                text-align: justify;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        .buscar {
+            input {
+                font-size: 8px;
+            }
+
+            button {
+                font-size: 8px;
+            }
+        }
+    }
+
+    nav {
+        .menu {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: none;
+            align-items: none;
+
+            li {
+                width: 100%;
+                font-size: 10px;
+                padding: 0;
+                font-weight: 0;
+                line-height: 0;
+
+                a {
+                    font-size: 10px;
+                    padding: 0;
+                    font-weight: 0;
+                }
+
+                .submenu {
+                    li {
+                        width: 100%;
+                        font-size: 10px;
+                        padding: 0;
+                        font-weight: 0;
+                        line-height: 0;
+
+                        a {
+                            font-size: 10px;
+                            padding: 0;
+                            font-weight: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer-container-1 {
+
+            div {
+                span {
+                    font-size: 8px;
+                }
+            }
+        }
+
+        .footer-container-2 {
+            ul {
+                li {
+                    a {
+                        font-size: 8px;
+                    }
+                }
+            }
+
+            .footer-social {
+                ul {
+                    li {
+                        margin: 0 0 2px 0;
+                        font-size: 15px;
+
+                        a {
+                            i {
+                                padding-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer-pagos {
+                img {
+                    width: 20px;
+                }
+            }
+
+            .footer-contactanos {
+                ul {
+                    li {
+                        margin: 0 0 2px 0;
+                        font-size: 15px;
+                    }
+
+                    a {
+                        i {
+                            padding-right: 4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .copy {
+            font-size: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    header {
+        .buscar {
+            input {
+                width: 80px;
+            }
+
+            button {
+                font-size: 5px;
+            }
+        }
+
+        .carrito-cuenta {
+            width: 200px;
+            padding: 0;
+            margin: 0;
+
+            span {
+                font-size: 8px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .cuenta {
+                a {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+
+    nav {
+        .menu {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                width: 100%;
+                font-size: 10px;
+                padding: 0;
+                font-weight: 0;
+                line-height: 0;
+
+                a {
+                    font-size: 10px;
+                    padding: 0;
+                    font-weight: 0;
+                }
+
+                .submenu {
+                    li {
+                        width: 100%;
+                        font-size: 10px;
+                        padding: 0;
+                        font-weight: 0;
+                        line-height: 0;
+
+                        a {
+                            font-size: 10px;
+                            padding: 0;
+                            font-weight: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer-container-1 {
+            div {
+                span {
+                    font-size: 8px;
+                }
+            }
+        }
+
+        .footer-container-2 {
+            ul {
+                li {
+                    a {
+                        font-size: 8px;
+                    }
+                }
+            }
+
+            .footer-social {
+                ul {
+                    li {
+                        margin: 0 0 2px 0;
+                        font-size: 8px;
+
+                        a {
+                            i {
+                                padding-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer-contactanos {
+                ul {
+                    li {
+                        margin: 0 0 2px 0;
+                        font-size: 8px;
+
+                        a {
+                            i {
+                                padding-right: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .footer-pagos {
+                img {
+                    width: 8px;
+                }
+            }
+        }
+
+        .copy {
+            font-size: 8px;
+        }
+    }
+}
+
+
+/****************************** INDEX ******************************/
+/****************************** INDEX ******************************/
+/****************************** INDEX ******************************/
+
+
+@media screen and (max-width: 1200px) {
+
+    .producto-item {
+        width: 300px;
+        padding: 0;
+
+        a {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .producto-caja {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .producto-triple {
+            .producto-item {
+                width: 250px;
+                a {
+                    img {
+                        width: 250px;
+                    }
+                }
+
+                span {
+                    font-size: 1rem;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .producto-triple {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+
+        .producto-item {
+            margin: 30px;
+            width: 350px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            span {
+                font-size: 1.5rem;
+                padding: 15px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .descuento {
+        h1 {
+            font-size: 2.125rem;
+
+            .caja-slide {
+                height: 2.6rem;
+                line-height: 2.125rem;
+
+                .texto-slide {
+                    animation: slide-mob 5s infinite;
+
+                    span {
+                        font-size: 1rem;
+                        letter-spacing: 0.1rem;
+                    }
+                }
+            }
+
+            @keyframes slide-mob {
+                0% {
+                    top: 0;
+                }
+        
+                25% {
+                    top: -2.125rem;
+                }
+        
+                50% {
+                    top: -4.25rem;
+                }
+        
+                72.5% {
+                    top: -6.375rem;
+                }
+            }
+        }
+    }
+
+    .info-caja {
+        .info-solo {
+            width: 50%;
+            padding: 0 5px;
+
+            i {
+                margin: 10px;
+                font-size: 1rem;
+            }
+
+            span {
+                text-align: left;
+                font-size: 10px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .producto-caja {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .info-solo {
+        span {
+            font-size: 7px;
+        }
+
+        p {
+            font-size: 5px;
+        }
+    }
+
+    .producto-caja {
+        h1 {
+            font-size: 16px;
+        }
+
+        .producto-triple {
+            .producto-item {
+                margin: 20px;
+                width: 150px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                span {
+                    font-size: 1rem;
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {}
+
+
+/****************************** QUIENES SOMOS ******************************/
+/****************************** QUIENES SOMOS ******************************/
+/****************************** QUIENES SOMOS ******************************/
+
+
+@media screen and (max-width: 1080px) {
+
+    .description-image {
+        div {
+            width: 550px;
+            transition: transform .5s;
+
+            img {
+                width: 100%;
+                height: 100%;
+                transition: transform .5s;
+        
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .title-container {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        img {
+            width: 150px;
+        }
+    }
+    
+    .description-container {
+        h2 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .description-image {
+        div {
+            width: 500px;
+        }
+    }
+
+    .title-container {
+        h1 {
+            font-size: 1rem;
+        }
+
+        img {
+            width: 100px;
+        }
+    }
+    
+    .description-container {
+        h2 {
+            font-size: 15px;
+        }
+    }
+}
+
+
+/****************************** QUIENES ******************************/
+
+

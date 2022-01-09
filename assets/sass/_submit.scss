@@ -1,0 +1,54 @@
+@import "variables";
+
+/* botón submit */
+
+.caja-boton {
+	width: max-content;
+	margin: 30px auto;
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+
+	button {
+		padding: 16px 32px 13px;
+		background-color: transparent;
+		border: 1px solid $color-4;
+		border-radius: 5px;
+		color: $color-4;
+		font-family: "monserrat";
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		transition: color 300ms ease, transform 300ms ease;
+	
+		&:hover,
+		&:focus {
+			color: #fff;
+			cursor: pointer;
+		}
+	
+		&:hover + .item-boton,
+		&:focus + .item-boton {
+			transform: translateY(calc(-100% + 2px));
+		}
+	
+		&:active {
+			transform: scale(0.8);
+		}
+	
+		&:active + .item-boton {
+			transform: translateY(calc(-100% + 2px)) scale(0.8);
+		}
+	}
+
+	.item-boton {
+		background-color: $color-4;
+		height: calc(100% + 2px);
+		width: 100%;
+		position: absolute;
+		bottom: calc(-100% - 2px);
+		left: 0;
+		z-index: -1;
+		transition: transform 300ms ease;
+	}
+}
