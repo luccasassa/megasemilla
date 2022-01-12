@@ -138,16 +138,19 @@ iframe {
             text-align: center;
             font-size: 16px;
             font-weight: 700;
-            transition: .5s;
-        
+            transition: .2s;
+            
             &:hover {
                 background-color: $color-4;
+                border: 1px solid #fff;
                 color: #fff;
                 cursor: pointer;
             }
         
             &:active {
-                transform: scale(0.8);
+                background-color: $color-1;
+                color: $color-5;
+                border: 1px solid $color-5;
             }
         }
     }

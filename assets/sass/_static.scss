@@ -6,7 +6,7 @@
 
 /* <SCROLLBAR */
 ::-webkit-scrollbar{
-    width: 8px;
+    width: 5px;
 }
 ::-webkit-scrollbar-thumb{
     background: $color-3;
@@ -235,6 +235,7 @@ nav {
 body {
     margin: 0;
     font-family: "monserrat";
+    scroll-behavior: smooth;
 }
 
 footer {

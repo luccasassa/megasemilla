@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/logo/logo-c1/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/logo/logo-c1/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/logo/logo-c1/apple-icon-72x72.png">
@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/logo/logo-c1/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/logo/logo-c1/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/logo/logo-c1/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/images/logo/logo-c1/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/logo/logo-c1/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/logo/logo-c1/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/logo/logo-c1/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/logo/logo-c1/favicon-16x16.png">
@@ -25,14 +25,14 @@
 
     <link rel="stylesheet" href="../assets/sass/main.css">
 
-    <title>MEGASEMILLA - QUIENES SOMOS?</title>
+    <title>MEGASEMILLA - PRODUCTO "N"</title>
 </head>
 
 <body>
 
     <!-- encabezado -->
     <header>
-        
+
         <!-- barra de búsqueda -->
         <div class="buscar">
             <input type="text" placeholder="Buscar producto">
@@ -40,12 +40,12 @@
                 <i class="fas fa-search"></i>
             </button>
         </div>
-        
+
         <!-- banner MEGASEMILLA -->
         <div class="banner">
             <img src="../assets/images/logo/banner2.png" alt="banner">
         </div>
-        
+
         <!-- opciones con carrito -->
         <div class="carrito-cuenta">
             <a href="#" style="text-decoration: none;">
@@ -80,61 +80,129 @@
                     <li> <a href="#">OTROS</a> </li>
                 </ul>
             </li>
-            
+
             <li> <a href="contacto.html">CONTACTO</a> </li>
             <li> <a href="quienes-somos.html">QUIENES SOMOS</a> </li>
         </ul>
     </nav>
 
     <!-- cuerpo de la página -->
-    
-    <main class="main-quienes-somos">
-        <div class="title-container">
-            <h1>¿Quiénes Somos?</h1>
 
-            <img src="../assets/images/logo/logo-c2.png" alt="logo">
-        </div>
+    <main class="main-detalle-producto">
 
-        <div class="description-container">
-            <h2>
-                "Trabajamos día a día para brindar la mejor calidad al mejor precio"
-            </h2>
-        </div>
+        <!-- producto mini imágenes -->
+        <div class="producto-vista-previa">
 
-        <div class="description-image">
-            <div>
-                <img src="../assets/images/productos/muestra/quienes-somos.jpg" alt="prototipo de producto">
+            <div class="carrusel-dots">
+                <label for="img-1">
+                    <img src="../assets/images/productos/frutos-secos-8/almendra-guara-1.jpg" alt="img-1">
+                </label>
+
+                <label for="img-2">
+                    <img src="../assets/images/productos/frutos-secos-8/almendra-guara-2.jpg" alt="img-2">
+                </label>
+
+                <label for="img-3">
+                    <img src="../assets/images/tarjetas/QR.jpg" alt="img-3">
+                </label>
             </div>
+
+        </div>        
+
+        <!-- producto imágenes deslizables -->
+        <div class="producto-carrusel">
+            <ul>
+                <!-- uno -->
+                <input type="radio" name="radio-buttons" id="img-1" checked>
+
+                <li>
+                    <div class="slide-img">
+                        <img src="../assets/images/productos/frutos-secos-8/almendra-guara-1.jpg" alt="img-1">
+                    </div>
+
+                    <div class="carrusel-controles">
+                        <label for="img-3" class="anterior">
+                            <span>&lsaquo;</span>
+                        </label>
+
+                        <label for="img-2" class="siguiente">
+                            <span>&rsaquo;</span>
+                        </label>
+                    </div>
+                </li>
+
+                <!-- dos -->
+                <input type="radio" name="radio-buttons" id="img-2">
+                
+                <li>
+                    <div class="slide-img">
+                        <img src="../assets/images/productos/frutos-secos-8/almendra-guara-2.jpg" alt="img-2">
+                    </div>
+
+                    <div class="carrusel-controles">
+                        <label for="img-1" class="anterior">
+                            <span>&lsaquo;</span>
+                        </label>
+                        
+                        <label for="img-3" class="siguiente">
+                            <span>&rsaquo;</span>
+                        </label>
+                    </div>
+                </li>
+
+                <!-- tres -->
+                <input type="radio" name="radio-buttons" id="img-3" />
+                
+                <li>
+                    <div class="slide-img">
+                        <img src="../assets/images/tarjetas/QR.jpg" alt="img-3">
+                    </div>
+
+                    <div class="carrusel-controles">
+                        <label for="img-2" class="anterior">
+                            <span>&lsaquo;</span>
+                        </label>
+                        
+                        <label for="img-1" class="siguiente">
+                            <span>&rsaquo;</span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
         </div>
 
-        <div class="parrafo-container">
-            <p>
-                Somos una empresa en constante movimiento que busca satisfacer las necesidades de sus clientes
-                desarrollando alianzas con productores de todo el país para tener una amplia variedad de productos.
-                Nuestro objetivo es poder ofrecer a todos nuestros clientes productos de calidad al mejor precio.
-            </p>
+        <div class="producto-datos">
+            <span class="texto-titulo"><b>Almendra Guara</b></span>
+            <span class="texto-precio"><b>$940</b></span>
 
-            <p>
-                Producimos, elaboramos, fraccionamos y comercializamos más de cien productos diferentes cuidando los
-                sabores, las mezclas, y los procesos en cada uno de ellos.
-            </p>
+            <form>
+                <span class="texto-cantidad">Cantidad</span>
 
-            <p>
-                Tenemos un equipo de trabajo compuesto por Ingenieros en alimentos, Seguridad e Higiene, Control de
-                Calidad, Licenciados en Administración, expertos en Logística, y Customer Service para brindar la mejor
-                experiencia de compra posible.
-            </p>
+                <div class="producto-peso">
+                    <select>
+                        <option value="700">700 grs</option>
+                        <option value="5000">5 kgs</option>
+                        <option value="10000">10 kgs</option>
+                    </select>
+                </div>
 
-            <p>
-                En <span><b>MEGASEMILLA</b></span> trabajamos día a día para llevar productos ricos,
-                saludables y nutritivos a la mesa de todos nuestros clientes.
-            </p>
+                <div class="producto-cantidad">
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><b>-</b></div>
+                    
+                    <input type="number" id="number" value="0">
+                    
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><b>+</b></div>
+                </div>
+                    
+                <button type="submit">AGREGAR AL CARRITO</button>
+            </form>
         </div>
     </main>
 
     <!-- botón whatsapp flotante -->
     <div class="whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=+5492612510655&text=Hola%21%20quisiera%20comprar%20un%20producto%20." target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=+5492612510655&text=Hola%21%20quisiera%20comprar%20un%20producto%20."
+            target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
@@ -147,11 +215,11 @@
             <div>
                 <span>REDES SOCIALES</span>
             </div>
-            
+
             <div>
                 <span>MEDIOS DE PAGO</span>
             </div>
-            
+
             <div>
                 <span>CONTACTANOS</span>
             </div>
@@ -198,11 +266,13 @@
             <div class="footer-contactanos">
                 <ul>
                     <li>
-                        <a href="https://wa.me/+5492612510655" target="_blank"><i class="fab fa-whatsapp"></i>Escribinos..</a>
+                        <a href="https://wa.me/+5492612510655" target="_blank"><i
+                                class="fab fa-whatsapp"></i>Escribinos..</a>
                     </li>
 
                     <li>
-                        <a href="https://g.page/PalmaresMall?share" target="_blank"> <i class="fas fa-map-marker-alt"></i></i>Dónde estamos?</a>
+                        <a href="https://g.page/PalmaresMall?share" target="_blank"> <i
+                                class="fas fa-map-marker-alt"></i></i>Dónde estamos?</a>
                     </li>
 
                     <li>
@@ -215,6 +285,23 @@
 
         <span class="copy">Megasemilla © 2021 - Mendoza - Argentina</span>
     </footer>
+
+    <script>
+        function increaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+
+        function decreaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number').value = value;
+        }
+    </script>
 </body>
 
 </html>
