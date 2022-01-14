@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO -->
+    <meta name="description" content="Tienda Online de Alimentos Saludables. Frutos Secos, Cereales, Granolas, Mixes, Semillas y mucho más!">
+    <meta name="keywords" content="frutos, secos, saludable, semillas, almendras, mix, nueces, dieta, comprá y vendé, envio a domicilio, mendoza, argentina">
+
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/logo/logo-c1/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/logo/logo-c1/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/logo/logo-c1/apple-icon-72x72.png">
@@ -21,9 +26,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/logo/logo-c1/favicon-16x16.png">
     <link rel="manifest" href="../assets/images/logo/logo-c1/manifest.json">
 
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/771a952c9e.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../assets/sass/main.css">
+    <!-- estilos -->
+    <link rel="stylesheet" href="../assets/styles/main.css">
 
     <title>MEGASEMILLA - PRODUCTO "N"</title>
 </head>
@@ -34,12 +41,12 @@
     <header>
 
         <!-- barra de búsqueda -->
-        <div class="buscar">
-            <input type="text" placeholder="Buscar producto">
+        <form class="buscar">
+            <input type="text" placeholder="Buscar producto" required>
             <button type="submit">
                 <i class="fas fa-search"></i>
             </button>
-        </div>
+        </form>
 
         <!-- banner MEGASEMILLA -->
         <div class="banner">
@@ -174,12 +181,15 @@
         <div class="producto-datos">
             <span class="texto-titulo"><b>Almendra Guara</b></span>
             <span class="texto-precio"><b>$940</b></span>
+            <span class="texto-cuotas"><i class="far fa-credit-card"></i><b>30</b> cuotas de <b>$98,69</b></span>
+            <span><a href="#!"><b>Ver más detalles</b></a></span>
 
-            <form>
+            <!-- llevar producto (peso y cantidad) -->
+            <form class="form-compra">
                 <span class="texto-cantidad">Cantidad</span>
 
                 <div class="producto-peso">
-                    <select>
+                    <select required>
                         <option value="700">700 grs</option>
                         <option value="5000">5 kgs</option>
                         <option value="10000">10 kgs</option>
@@ -187,17 +197,48 @@
                 </div>
 
                 <div class="producto-cantidad">
-                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><b>-</b></div>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">
+                        <b>-</b>
+                    </div>
                     
-                    <input type="number" id="number" value="0">
+                    <input type="number" id="number" value="0" required>
                     
-                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><b>+</b></div>
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">
+                        <b>+</b>
+                    </div>
                 </div>
-                    
+
                 <button type="submit">AGREGAR AL CARRITO</button>
+            </form>
+
+            <!-- codigo postal -->
+            <form class="form-envio">
+                <div class="texto-medios-de-envio">
+                    <span><i class="fas fa-truck"></i>Medios de Envío</span>
+                </div>
+
+                <div class="codigo-postal">
+                    <input type="text" placeholder="Tu código postal" required>
+                    <button type="submit"><b>CALCULAR</b></button>
+                </div>
+                
+                <div class="calcular-CP">
+                    <a href="https://www.correoargentino.com.ar/formularios/cpa" target="_blank">No sé mi código postal</a>
+                </div>
             </form>
         </div>
     </main>
+
+    <div class="descripcion-producto">
+        <p>
+            Cosechada y producida en mendoza, provincia de nuestro pais. Son ricas en fibras, proteínas, vitaminas B y E, grasas saludables, hierro, calcio, fósforo. Una alternativa mas economica dentro de las almendras!
+        </p>
+        <p>
+            Origen: Mendoza.
+            <br>
+            Ingredientes: Almendra Pelada.
+        </p>
+    </div>
 
     <!-- botón whatsapp flotante -->
     <div class="whatsapp">

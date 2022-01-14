@@ -296,6 +296,7 @@ nav .menu li .submenu li:hover {
 body {
   margin: 0;
   font-family: "monserrat";
+  scroll-behavior: smooth;
 }
 
 footer {
@@ -897,7 +898,16 @@ footer .copy {
   }
 }
 
-/****************************** QUIENES ******************************/
+/****************************** PRODUCTOS ******************************/
+/****************************** PRODUCTOS ******************************/
+/****************************** PRODUCTOS ******************************/
+@media screen and (max-width: 1080px) {
+  .stock {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @font-face {
   src: url("../fonts/Montserrat-Regular.ttf");
   font-family: "monserrat";
@@ -1196,7 +1206,7 @@ main .producto-caja .producto-triple .producto-item span {
 }
 
 .main-crear-cuenta .info-compra {
-  width: 61ch;
+  width: 48ch;
   margin: auto;
   color: #241407 !important;
   -webkit-animation: typing 6s steps(61), blink 0.5s step-end infinite alternate;
@@ -1674,10 +1684,95 @@ h1 {
   font-family: "poppins";
 }
 
+@font-face {
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-family: "monserrat";
+}
+
+@font-face {
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-family: "poppins";
+}
+
+/* botón submit */
+.caja-boton {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.caja-boton button {
+  padding: 16px 32px 13px;
+  background-color: transparent;
+  border: 1px solid #6c584c;
+  border-radius: 5px;
+  color: #6c584c;
+  font-family: "monserrat";
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: color 300ms ease, -webkit-transform 300ms ease;
+  transition: color 300ms ease, -webkit-transform 300ms ease;
+  transition: color 300ms ease, transform 300ms ease;
+  transition: color 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.caja-boton button:hover, .caja-boton button:focus {
+  color: #fff;
+  cursor: pointer;
+}
+
+.caja-boton button:hover + .item-boton,
+.caja-boton button:focus + .item-boton {
+  -webkit-transform: translateY(calc(-100% + 2px));
+          transform: translateY(calc(-100% + 2px));
+}
+
+.caja-boton button:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.caja-boton button:active + .item-boton {
+  -webkit-transform: translateY(calc(-100% + 2px)) scale(0.8);
+          transform: translateY(calc(-100% + 2px)) scale(0.8);
+}
+
+.caja-boton .item-boton {
+  background-color: #6c584c;
+  height: calc(100% + 2px);
+  width: 100%;
+  position: absolute;
+  bottom: calc(-100% - 2px);
+  left: 0;
+  z-index: -1;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+/* extends */
+.main-detalle-producto .producto-datos span a, .main-detalle-producto .producto-datos .form-envio .calcular-CP a {
+  font-family: "poppins";
+  font-size: 12px;
+  color: #ba9c82;
+  text-decoration: none;
+}
+
+.main-detalle-producto .producto-datos span a:hover, .main-detalle-producto .producto-datos .form-envio .calcular-CP a:hover {
+  color: #6c584c;
+  text-decoration: underline;
+}
+
 .main-detalle-producto {
-  border: solid 1px black;
+  padding: 20px;
   width: 95%;
-  margin: 100px auto;
+  margin: 50px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1686,7 +1781,6 @@ h1 {
 }
 
 .main-detalle-producto .producto-vista-previa {
-  border: 1px solid green;
   margin: auto 0;
 }
 
@@ -1701,7 +1795,7 @@ h1 {
 }
 
 .main-detalle-producto .producto-carrusel {
-  border: 1px solid red;
+  border: solid 1px #ba9c82;
   width: 600px;
   height: 400px;
   border-radius: 30px;
@@ -1799,7 +1893,6 @@ h1 {
 }
 
 .main-detalle-producto .producto-datos {
-  border: 1px solid violet;
   width: 30%;
   margin: 0 20px;
 }
@@ -1817,19 +1910,30 @@ h1 {
   font-size: 1.6rem;
 }
 
-.main-detalle-producto .producto-datos form {
+.main-detalle-producto .producto-datos .texto-cuotas {
+  display: block;
+  margin-top: 10px;
+  font-family: "poppins";
+  font-size: 15px;
+}
+
+.main-detalle-producto .producto-datos .texto-cuotas i {
+  padding-right: 5px;
+}
+
+.main-detalle-producto .producto-datos .form-compra {
   color: #241407;
 }
 
-.main-detalle-producto .producto-datos form .texto-cantidad {
+.main-detalle-producto .producto-datos .form-compra .texto-cantidad {
   display: block;
-  margin: 40px 0 15px 0;
+  margin: 20px 0 0 0;
   font-family: "poppins";
-  font-size: .8rem;
+  font-size: .7rem;
   color: #222;
 }
 
-.main-detalle-producto .producto-datos form .producto-peso {
+.main-detalle-producto .producto-datos .form-compra .producto-peso {
   position: relative;
   display: block;
   width: 10rem;
@@ -1837,10 +1941,10 @@ h1 {
   line-height: 2.5;
   overflow: hidden;
   color: #241407;
-  border-radius: .25em;
+  border-radius: 10px;
 }
 
-.main-detalle-producto .producto-datos form .producto-peso::after {
+.main-detalle-producto .producto-datos .form-compra .producto-peso::after {
   position: absolute;
   right: 0;
   padding: 0 1rem;
@@ -1849,11 +1953,11 @@ h1 {
   content: "\f078";
 }
 
-.main-detalle-producto .producto-datos form .producto-peso:hover::after {
+.main-detalle-producto .producto-datos .form-compra .producto-peso:hover::after {
   color: #ba9c82;
 }
 
-.main-detalle-producto .producto-datos form .producto-peso select {
+.main-detalle-producto .producto-datos .form-compra .producto-peso select {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1869,28 +1973,24 @@ h1 {
   cursor: pointer;
 }
 
-.main-detalle-producto .producto-datos form .producto-peso select option {
+.main-detalle-producto .producto-datos .form-compra .producto-peso select option {
   width: 100%;
   cursor: pointer;
 }
 
-.main-detalle-producto .producto-datos form .producto-cantidad {
+.main-detalle-producto .producto-datos .form-compra .producto-cantidad {
   display: inline-block;
   margin: 15px auto;
   text-align: center;
   border: 1px solid #ba9c82;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
-.main-detalle-producto .producto-datos form .producto-cantidad .value-button {
+.main-detalle-producto .producto-datos .form-compra .producto-cantidad .value-button {
   display: inline-block;
   width: 30px;
   height: 20px;
-  text-align: center;
-  vertical-align: middle;
-  padding: 11px 0;
   color: #241407;
-  border-radius: 15px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1898,24 +1998,119 @@ h1 {
   cursor: pointer;
 }
 
-.main-detalle-producto .producto-datos form .producto-cantidad #number {
+.main-detalle-producto .producto-datos .form-compra .producto-cantidad #number {
   text-align: center;
   border: none;
   outline: none;
   margin: 0px;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 30px;
 }
 
-.main-detalle-producto .producto-datos form .producto-cantidad input[type=number]::-webkit-inner-spin-button,
-.main-detalle-producto .producto-datos form .producto-cantidad input[type=number]::-webkit-outer-spin-button {
+.main-detalle-producto .producto-datos .form-compra .producto-cantidad input[type=number]::-webkit-inner-spin-button,
+.main-detalle-producto .producto-datos .form-compra .producto-cantidad input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
           appearance: none;
   margin: 0;
 }
 
-.main-detalle-producto .producto-datos form button {
-  display: block;
+.main-detalle-producto .producto-datos .form-compra button {
+  margin: 20px;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid #6c584c;
+  border-radius: 8px;
+  color: #6c584c;
+  font-family: "monserrat";
+  font-size: 14px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.main-detalle-producto .producto-datos .form-compra button:hover {
+  background-color: #6c584c;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main-detalle-producto .producto-datos .form-compra button:active {
+  background-color: #e6decf;
+  color: #241407;
+  border: 1px solid #241407;
+}
+
+.main-detalle-producto .producto-datos .form-envio {
+  font-family: "poppins";
+}
+
+.main-detalle-producto .producto-datos .form-envio .texto-medios-de-envio span {
+  font-size: .7rem;
+}
+
+.main-detalle-producto .producto-datos .form-envio .texto-medios-de-envio span i {
+  padding-right: 5px;
+  color: #333;
+  font-size: .8rem;
+}
+
+.main-detalle-producto .producto-datos .form-envio .codigo-postal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-top: 5px;
+}
+
+.main-detalle-producto .producto-datos .form-envio .codigo-postal input, .main-detalle-producto .producto-datos .form-envio .codigo-postal button {
+  line-height: 25px;
+  border: 1px solid #ba9c82;
+  font-family: "poppins";
+}
+
+.main-detalle-producto .producto-datos .form-envio .codigo-postal input {
+  outline: none;
+  border-radius: 8px 0 0 8px;
+}
+
+.main-detalle-producto .producto-datos .form-envio .codigo-postal input::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+.main-detalle-producto .producto-datos .form-envio .codigo-postal input:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.main-detalle-producto .producto-datos .form-envio .codigo-postal input::-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.main-detalle-producto .producto-datos .form-envio .codigo-postal input::placeholder {
+  font-size: 12px;
+}
+
+.main-detalle-producto .producto-datos .form-envio .codigo-postal button {
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  color: #6c584c;
+  background-color: #e6decf;
+  cursor: pointer;
+}
+
+.main-detalle-producto .producto-datos .form-envio .codigo-postal button:active {
+  background-color: #6c584c;
+  color: #fff;
+}
+
+.main-detalle-producto .producto-datos .form-envio .calcular-CP {
+  margin-top: 5px;
+}
+
+.descripcion-producto {
+  margin: 0 auto 70px auto;
+  width: 90%;
 }
 
 @font-face {

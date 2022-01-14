@@ -1,5 +1,11 @@
 @import "variables";
 
+@mixin complexion-caja ($ancho, $bckc, $flechita) {
+    width: $ancho;
+    background-color: $bckc;
+    cursor: $flechita;
+}
+
 main {
     .sliders-caja {
         width: 100%;
@@ -114,9 +120,7 @@ main {
     }
 
     .info-caja {
-        width: 100%;
-        background-color: rgba(120, 120, 120, .3);
-        cursor: default;
+        @include complexion-caja(100%, rgba(120, 120, 120, .3), default);
 
         .info-triple {
             display: flex;
