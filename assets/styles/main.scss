@@ -1,17 +1,10 @@
 @import "variables";
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 @import "static";
-@import "responsive";
-@import "index";
-@import "crear-cuenta";
-@import "iniciar-sesion";
-@import "productos";
-@import "detalle-producto";
-@import "contacto";
 @import "quienes-somos";
-@import "submit";
-
-.asdasd {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
+@import "cuenta";
+@import "detalle-producto";
+@import "productos";
+@import "contacto";
+@import "index";
+@import "responsive";

@@ -1,9 +1,8 @@
 @import "variables";
-@import "submit";
 
 /* extends */
 %link-detalle-producto {
-    font-family: "poppins";
+    font-family: "poppins-light";
     font-size: 12px;
     color: $color-2;
     text-decoration: none;
@@ -144,13 +143,14 @@
             display: block;
             margin-top: 20px;
             color: $color-3;
+            font-family: "monserrat-bold";
             font-size: 1.6rem;
         }
         
         .texto-cuotas {
             display: block;
             margin-top: 10px;
-            font-family: "poppins";
+            font-family: "poppins-light";
             font-size: 15px;
             
             i {
@@ -170,7 +170,7 @@
             .texto-cantidad {
                 display: block;
                 margin: 20px 0 0 0;
-                font-family: "poppins";
+                font-family: "poppins-light";
                 font-size: .7rem;
                 color: #222;
             }
@@ -257,7 +257,7 @@
                 border: 1px solid $color-4;
                 border-radius: 8px;
                 color: $color-4;
-                font-family: "monserrat";
+                font-family: "monserrat-bold";
                 font-size: 14px;
                 transition: .2s;
                 
@@ -277,7 +277,7 @@
         }
 
         .form-envio {
-            font-family: "poppins";
+            font-family: "poppins-regular";
 
             .texto-medios-de-envio {
                 span {
@@ -299,7 +299,7 @@
                 %envio {
                     line-height: 25px;
                     border: 1px solid $color-2;
-                    font-family: "poppins"
+                    font-family: "poppins-regular";
                 }
     
                 input {
@@ -339,6 +339,8 @@
 }
 
 .descripcion-producto {
-    margin: 0 auto 70px auto;
-    width: 90%;
+    margin: 0 0 70px 60px;
+    font-family: "monserrat-regular";
+    font-size: .9rem;
+    width: 57%;
 }

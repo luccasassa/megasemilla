@@ -1,169 +1,173 @@
 @import "variables";
 
-h1 {
-    padding-top: 40px;
-    margin: 0 0 30px;
-    text-align: center;
-    font-size: 2rem;
-    color: $color-2;
-}
-
 .main-productos {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    
-    .filtros {
-        font-family: "poppins";
-        font-size: 18px;
-        list-style: none;
-        margin: 50px 0;
-        padding: 0;
-        color: $color-3;
-        
-        .cat-li {
-            cursor: default;
-            
-            ul {
-                list-style: none;
-                padding: 0 10px;
+    h1 {
+        padding-top: 40px;
+        margin: 0 0 30px;
+        text-align: center;
+        font-size: 2rem;
+        color: $color-2;
+    }
 
-                a {
-                    text-decoration: none;
-                    color: $color-5;
+    .container-productos {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
 
-                    &:hover {
-                        color: $color-2;
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
+        .filtros {
+            font-family: "poppins-regular";
+            font-size: 18px;
+            list-style: none;
+            margin: 50px 0;
+            padding: 0;
+            color: $color-3;
 
-        .filt-li {
-            margin-top: 50px;
-            cursor: default;
-
-            ul {
-                color: $color-4;
-                list-style: none;
+            .cat-li {
+                cursor: default;
 
                 ul {
                     list-style: none;
                     padding: 0 10px;
-                    color: $color-5;
 
-                    input {
+                    a {
+                        text-decoration: none;
+                        color: $color-5;
+
                         &:hover {
-                            background: $color-1;
-                            color: $color-1;
+                            color: $color-2;
+                            text-decoration: underline;
                         }
+                    }
+                }
+            }
 
-                        &::after {
-                            background-color: $color-3;
-                            color: $color-3;
+            .filt-li {
+                margin-top: 50px;
+                cursor: default;
+
+                ul {
+                    color: $color-4;
+                    list-style: none;
+
+                    ul {
+                        list-style: none;
+                        padding: 0 10px;
+                        color: $color-5;
+
+                        input {
+                            &:hover {
+                                background: $color-1;
+                                color: $color-1;
+                            }
+
+                            &::after {
+                                background-color: $color-3;
+                                color: $color-3;
+                            }
                         }
                     }
                 }
             }
         }
-    }
 
-    .stock {
-        margin: 0 auto 50px auto;
-        border-left: 1px solid rgba(0, 0, 0, .04);
+        .stock {
+            margin: 0 auto 50px auto;
+            border-left: 1px solid rgba(0, 0, 0, .04);
 
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
 
-        .producto {
-            margin: 15px;
-            border: 1px solid $color-1;
-            border-radius: 20px;
-            width: 200px;
-            box-shadow: -1px 15px 13px -12px rgba(0, 0, 0, .2);
+            .producto {
+                margin: 15px;
+                border: 1px solid $color-1;
+                border-radius: 20px;
+                width: 200px;
+                box-shadow: -1px 15px 13px -12px rgba(0, 0, 0, .2);
 
-            &:hover {
-                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);
-                transition: .4s;
-                transform: translateY(-10px);
-            }
-            
-            a {
-                img {
-                    width: 100%;
-                    border-bottom: 4px solid $color-2;
-                    border-radius: 20px 20px 0 0;
+                &:hover {
+                    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .1);
+                    transition: .4s;
+                    transform: translateY(-10px);
                 }
-            }
-            
-            span {
-                text-align: center;
-                display: block;
-                margin: 10px auto;
-                font-family: "poppins";
-            }
-
-            .tipo {
-                color: $color-5;
-                cursor: default;
-            }
-            
-            .precio {
-                font-family: "monserrat";
-                font-size: 1.2rem;
-                color: $color-2;
-                cursor: default;
-            }
-
-            .botones {
-                padding: 10px 0;
-                display: flex;
-                justify-content: space-around;
 
                 a {
-                    width: 70px;
-                    background-color: #fff;
-                    color: $color-3;
-                    font-family: "monserrat";
-                    font-size: 11px;
+                    img {
+                        width: 100%;
+                        border-bottom: 4px solid $color-2;
+                        border-radius: 20px 20px 0 0;
+                    }
+                }
+
+                span {
                     text-align: center;
-                    text-decoration: none;
-                    padding: 10px 5px;
-                    border: 1px solid $color-3;
-                    border-radius: 50px;
-                    cursor: pointer;
+                    display: block;
+                    margin: 10px auto;
+                    font-family: "poppins-regular";
                 }
 
-                .agregar {
-                    background-color: $color-2;
-                    color: #fff;
-                    transition: transform .3s;
-
-                    &:hover {
-                        transform: scale(1.05);
-                    }
-
-                    &:active {
-                        background-color: $color-4;
-                    }
+                .tipo {
+                    color: $color-5;
+                    cursor: default;
                 }
 
-                .ver {
-                    transition: transform .3s;
+                .precio {
+                    font-family: "monserrat-bold";
+                    font-size: 1.2rem;
+                    color: $color-2;
+                    cursor: default;
+                }
 
-                    &:hover {
-                        transform: scale(1.05);
+                .botones {
+                    padding: 10px 0;
+                    display: flex;
+                    justify-content: space-around;
+
+                    a {
+                        width: 70px;
+                        background-color: #fff;
+                        color: $color-3;
+                        font-family: "monserrat";
+                        font-size: 11px;
+                        text-align: center;
+                        text-decoration: none;
+                        padding: 10px 5px;
+                        border: 1px solid $color-3;
+                        border-radius: 50px;
+                        cursor: pointer;
                     }
 
-                    &:active {
-                        background-color: $color-1;
+                    .agregar {
+                        background-color: $color-2;
+                        color: #fff;
+                        font-family: "monserrat-bold";
+                        transition: transform .2s;
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+
+                        &:active {
+                            background-color: $color-4;
+                        }
                     }
 
-                    i {
-                        padding-right: 3px;
+                    .ver {
+                        font-family: "monserrat-bold";
+                        transition: transform .3s;
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+
+                        &:active {
+                            background-color: $color-1;
+                        }
+
+                        i {
+                            padding-right: 3px;
+                        }
                     }
                 }
             }

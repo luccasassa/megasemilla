@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <meta name="description" content="Tienda Online de Alimentos Saludables. Frutos Secos, Cereales, Granolas, Mixes, Semillas y mucho más!">
+    <meta name="author" content="luccaomg5@gmail.com">
+    <meta name="description" content="Encontrá todos nuestros productos en éste apartado. Gran variedad desde 'semillas', 'granolas', 'frutos secos' hasta 'mixes' de los ya mencionados.">
     <meta name="keywords" content="productos, frutos, secos, saludable, semillas, almendras, mix, nueces, dieta, comprá y vendé, envio a domicilio, mendoza, argentina">
 
     <!-- favicon -->
@@ -28,6 +29,9 @@
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/771a952c9e.js" crossorigin="anonymous"></script>
+
+    <!-- flaticon -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
     <!-- estilos -->
     <link rel="stylesheet" href="../assets/styles/main.css">
@@ -65,7 +69,7 @@
             <!-- opciones con cuenta -->
             <div class="cuenta">
                 <a href="crear-cuenta.html"> <span>CREAR CUENTA</span> </a>
-                <a> <i class="fas fa-grip-lines-vertical"></i> </a>
+                <a>ㅤ</a>
                 <a href="iniciar-sesion.html"> <span>INICIAR SESIÓN</span> </a>
             </div>
         </div>
@@ -95,775 +99,803 @@
 
     <!-- cuerpo de la página -->
 
-    <h1>Todos los Productos</h1>
-
+    
     <main class="main-productos">
+        <h1>Todos los Productos</h1>
 
-        <!-- filtros de busqueda -->
-        <ul class="filtros">
-            <li class="cat-li"><b>CATEGORIAS</b>
-                <ul>
-                    <li><a href="#!">Mixes</a></li>
-                    <li><a href="#!">Frutos Secos</a></li>
-                    <li><a href="#!">Cereales y Derivados</a></li>
-                    <li><a href="#!">Granolas</a></li>
-                    <li><a href="#!">Pasas</a></li>
-                    <li><a href="#!">Semillas</a></li>
-                    <li><a href="#!">Otros</a></li>
-                </ul>
-            </li>
+        <div class="container-productos">
 
-            <li class="filt-li"><b>FILTRAR POR</b>
-                <ul>
-                    <li> <b>Peso</b>
-                        <ul>
-                            <li><input type="radio" name="peso" value="500" id="">500 Gr</li>
-                            <li><input type="radio" name="peso" value="700" id="">700 Gr</li>
-                            <li><input type="radio" name="peso" value="1000" id="">1 Kg</li>
-                            <li><input type="radio" name="peso" value="2500" id="">2,5 Kg</li>
-                            <li><input type="radio" name="peso" value="5000" id="">5 Kg</li>
-                            <li><input type="radio" name="peso" value="10000" id="">10 Kg</li>
-                            <li><input type="radio" name="peso" value="25000" id="">25 Kg</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+            <!-- filtros de busqueda -->
+            <ul class="filtros">
+                <li class="cat-li"><b>CATEGORIAS</b>
+                    <ul>
+                        <li><a href="#!">Mixes</a></li>
+                        <li><a href="#!">Frutos Secos</a></li>
+                        <li><a href="#!">Cereales y Derivados</a></li>
+                        <li><a href="#!">Granolas</a></li>
+                        <li><a href="#!">Pasas</a></li>
+                        <li><a href="#!">Semillas</a></li>
+                        <li><a href="#!">Otros</a></li>
+                    </ul>
+                </li>
 
-        <!-- todos los productos -->
-        <div class="stock">
-            
-            <!-- producto 1 -->
-            
-            <div class="producto">
-                <a href="detalle-producto.html">
-                    <img src="../assets/images/productos/frutos-secos-8/almendra-guara-1.jpg" alt="almendraa guara">
-                </a>
+                <li class="filt-li"><b>FILTRAR POR</b>
+                    <ul>
+                        <li> <b>Peso</b>
+                            <ul>
+                                <li><input type="radio" name="peso" value="500" id="">500 Gr</li>
+                                <li><input type="radio" name="peso" value="700" id="">700 Gr</li>
+                                <li><input type="radio" name="peso" value="1000" id="">1 Kg</li>
+                                <li><input type="radio" name="peso" value="2500" id="">2,5 Kg</li>
+                                <li><input type="radio" name="peso" value="5000" id="">5 Kg</li>
+                                <li><input type="radio" name="peso" value="10000" id="">10 Kg</li>
+                                <li><input type="radio" name="peso" value="25000" id="">25 Kg</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
-                <span class="tipo">Almendra Guara</span>
-                <span class="precio"><b>$940</b></span>
+            <!-- todos los productos -->
+            <div class="stock">
 
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
+                <!-- producto 1 -->
 
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                <div class="producto">
+                    <a href="detalle-producto.html">
+                        <img src="../assets/images/productos/frutos-secos-8/almendra-guara-1.jpg" alt="almendraa guara">
+                    </a>
+
+                    <span class="tipo">Almendra Guara</span>
+                    <span class="precio"><b>$940</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 2 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/frutos-secos-8/almendra-nom-pareil-1.jpg"
+                            alt="almendra nom pareil">
+                    </a>
+
+                    <span class="tipo">Almendra Nom Pareil</span>
+                    <span class="precio"><b>$1262</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 3 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/cereales-y-derivados-10/almohaditas-dos-salvados-1.jpg"
+                            alt="almohaditas dos salvados">
+                    </a>
+
+                    <span class="tipo">Almohaditas Dos Salvados</span>
+                    <span class="precio"><b>$474</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 4 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/cereales-y-derivados-10/almohaditas-sabor-avellana-1.jpg"
+                            alt="almohaditas sabor avellana">
+                    </a>
+
+                    <span class="tipo">Almohaditas Sabor Avellana</span>
+                    <span class="precio"><b>$299</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 5 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/cereales-y-derivados-10/almohaditas-sabor-chocolate-1.jpg"
+                            alt="almohaditas sabor chocolate">
+                    </a>
+
+                    <span class="tipo">Almohaditas Sabor Chocolate</span>
+                    <span class="precio"><b>$351</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 6 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/cereales-y-derivados-10/almohaditas-sabor-frutilla-1.jpg"
+                            alt="almohaditas sabor frutilla">
+                    </a>
+
+                    <span class="tipo">Almohaditas Sabor Frutilla</span>
+                    <span class="precio"><b>$299</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 7 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/cereales-y-derivados-10/almohaditas-sabor-limon-1.jpg"
+                            alt="almohaditas sabor limon">
+                    </a>
+
+                    <span class="tipo">Almohaditas Sabor Limón</span>
+                    <span class="precio"><b>$299</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 8 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/cereales-y-derivados-10/aritos-frutales-1.jpg"
+                            alt="aritos frutales">
+                    </a>
+
+                    <span class="tipo">Aritos Frutales</span>
+                    <span class="precio"><b>$225</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 9 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/cereales-y-derivados-10/avena-instantanea-1.jpg"
+                            alt="avena instantánea">
+                    </a>
+
+                    <span class="tipo">Avena Instantánea</span>
+                    <span class="precio"><b>$90</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 10 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/otros-3/banana-chips-1.jpg" alt="chips de banana">
+                    </a>
+
+                    <span class="tipo">Banana Chips</span>
+                    <span class="precio"><b>$717</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 11 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/cereales-y-derivados-10/bolitas-de-chocolate-1.jpg"
+                            alt="bolitas de chocolate">
+                    </a>
+
+                    <span class="tipo">Bolitas de Chocolate</span>
+                    <span class="precio"><b>$241</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 12 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/frutos-secos-8/castañas-de-caju-1.jpg"
+                            alt="castañas de cajú">
+                    </a>
+
+                    <span class="tipo">Castañas de Cajú</span>
+                    <span class="precio"><b>$1.104</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 13 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/otros-3/coco-rallado-1.jpg" alt="coco rallado">
+                    </a>
+
+                    <span class="tipo">Coco Rallado</span>
+                    <span class="precio"><b>$319</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 14 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/cereales-y-derivados-10/copos-con-azucar-1.jpg"
+                            alt="copos con azúcar">
+                    </a>
+
+                    <span class="tipo">Copos Con Azúcar</span>
+                    <span class="precio"><b>$156</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 15 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/cereales-y-derivados-10/copos-sin-azucar-1.jpg"
+                            alt="copos sin azúcar">
+                    </a>
+
+                    <span class="tipo">Copos Sin Azúcar</span>
+                    <span class="precio"><b>$142</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 16 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/granolas-3/granola-energetica-1.jpg"
+                            alt="granola energética">
+                    </a>
+
+                    <span class="tipo">Granola Energética</span>
+                    <span class="precio"><b>$268</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 17 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/granolas-3/granola-patagonica-1.jpg"
+                            alt="granola patagónica">
+                    </a>
+
+                    <span class="tipo">Granola Patagónica</span>
+                    <span class="precio"><b>$386</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 18 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/frutos-secos-8/mani-con-cascara-1.jpg"
+                            alt="maní con cáscara">
+                    </a>
+
+                    <span class="tipo">Maní Con Cáscara</span>
+                    <span class="precio"><b>$740</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 19 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/frutos-secos-8/mani-japones-sabor-jamon-1.jpg"
+                            alt="maní japonés sabor jamon">
+                    </a>
+
+                    <span class="tipo">Maní Japonés Sabor Jamón</span>
+                    <span class="precio"><b>$241</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 20 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/frutos-secos-8/mani-tostado-salado-1.jpg"
+                            alt="maní tostado salado">
+                    </a>
+
+                    <span class="tipo">Maní Tostado Salado</span>
+                    <span class="precio"><b>$179</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 21 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/frutos-secos-8/mani-tostado-sin-sal-1.jpg"
+                            alt="maní tostado sin sal">
+                    </a>
+
+                    <span class="tipo">Maní Tostado Sin Sal</span>
+                    <span class="precio"><b>$173</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 22 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/mixes-11/mix-42k-1.jpg" alt="mix 42k">
+                    </a>
+
+                    <span class="tipo">Mix 42K</span>
+                    <span class="precio"><b>$1.132</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 23 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/mixes-11/mix-kdt-1.jpg" alt="mix kdt">
+                    </a>
+
+                    <span class="tipo">Mix KDT</span>
+                    <span class="precio"><b>$504</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 24 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/mixes-11/mix-patagonico-1.jpg" alt="mix patagonico">
+                    </a>
+
+                    <span class="tipo">Mix Patagónico</span>
+                    <span class="precio"><b>$710</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 25 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/mixes-11/mix-power-up-1.jpg" alt="mix porwer up">
+                    </a>
+
+                    <span class="tipo">Mix Power Up</span>
+                    <span class="precio"><b>$402</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 26 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/mixes-11/mix-power-up-full-1.jpg" alt="mix porwer up full">
+                    </a>
+
+                    <span class="tipo">Mix Power Up Full</span>
+                    <span class="precio"><b>$488</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 27 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/mixes-11/mix-runner-1.jpg" alt="mix runner">
+                    </a>
+
+                    <span class="tipo">Mix Runner</span>
+                    <span class="precio"><b>$692</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 28 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/mixes-11/mix-salado-1.jpg" alt="mix salado">
+                    </a>
+
+                    <span class="tipo">Mix Salado</span>
+                    <span class="precio"><b>$273</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 29 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/mixes-11/mix-semillas-1.jpg" alt="mix semillas">
+                    </a>
+
+                    <span class="tipo">Mix Semillas</span>
+                    <span class="precio"><b>$220</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 30 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/mixes-11/mix-sport-1.jpg" alt="mix sport">
+                    </a>
+
+                    <span class="tipo">Mix Sport</span>
+                    <span class="precio"><b>$491</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 31 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/mixes-11/mix-sport-full-1.jpg" alt="mix sport full">
+                    </a>
+
+                    <span class="tipo">Mix Sport Full</span>
+                    <span class="precio"><b>$577</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 32 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/mixes-11/mix-tropical-1.jpg" alt="mix tropical">
+                    </a>
+
+                    <span class="tipo">Mix Tropical</span>
+                    <span class="precio"><b>$590</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 33 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/frutos-secos-8/nuez-mariposa-extra-light-1.jpg"
+                            alt="nuez mariposa extra light">
+                    </a>
+
+                    <span class="tipo">Nuez Mariposa Extra Light</span>
+                    <span class="precio"><b>$1.263</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 34 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/pasas-5/pasas-de-arandanos-1.jpg" alt="pasas de arandanos">
+                    </a>
+
+                    <span class="tipo">Pasas de Arándanos</span>
+                    <span class="precio"><b>$973</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 35 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/pasas-5/pasas-de-ciruela-bombon-1.jpg"
+                            alt="pasas de ciruela bombon">
+                    </a>
+
+                    <span class="tipo">Pasas de Ciruela Bombón</span>
+                    <span class="precio"><b>$1.005</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 36 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/pasas-5/pasas-de-uva-jumbo-1.jpg" alt="pasas de uva jumbo">
+                    </a>
+
+                    <span class="tipo">Pasas de Uva Jumbo</span>
+                    <span class="precio"><b>$1.013</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 37 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/pasas-5/pasas-de-uva-morochas-1.jpg"
+                            alt="pasas de uva morochas">
+                    </a>
+
+                    <span class="tipo">Pasas de Uva Morochas</span>
+                    <span class="precio"><b>$205</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 38 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/pasas-5/pasas-de-uva-rubias-1.jpg"
+                            alt="pasas de uva rubias">
+                    </a>
+
+                    <span class="tipo">Pasas de Uva Rubias</span>
+                    <span class="precio"><b>$305</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 39 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/otros-3/rebozador-saludable-1.jpg"
+                            alt="rebozado saludable">
+                    </a>
+
+                    <span class="tipo">Rebozado Saludable</span>
+                    <span class="precio"><b>$179</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 40 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/semillas-4/semillas-de-girasol-1.jpg"
+                            alt="semillas de girasol">
+                    </a>
+
+                    <span class="tipo">Semillas de Girasol</span>
+                    <span class="precio"><b>$217</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 41 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/semillas-4/semillas-de-lino-1.jpg" alt="semillas de lino">
+                    </a>
+
+                    <span class="tipo">Semillas de Lino</span>
+                    <span class="precio"><b>$158</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 42 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/semillas-4/semillas-de-sesamo-1.jpg"
+                            alt="semillas de sésamo">
+                    </a>
+
+                    <span class="tipo">Semillas de Sésamo</span>
+                    <span class="precio"><b>$206</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
+                </div>
+
+                <!-- producto 43 -->
+
+                <div class="producto">
+                    <a href="#!">
+                        <img src="../assets/images/productos/semillas-4/semillas-de-zapallo-1.jpg"
+                            alt="semillas de zapallo">
+                    </a>
+
+                    <span class="tipo">Semillas de Zapallo</span>
+                    <span class="precio"><b>$817</b></span>
+
+                    <div class="botones">
+                        <a href="#!" class="agregar"><b>AGREGAR</b></a>
+
+                        <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
+                    </div>
                 </div>
             </div>
-            
-            <!-- producto 2 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/frutos-secos-8/almendra-nom-pareil-1.jpg" alt="almendra nom pareil">
-                </a>
-
-                <span class="tipo">Almendra Nom Pareil</span>
-                <span class="precio"><b>$1262</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 3 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/cereales-y-derivados-10/almohaditas-dos-salvados-1.jpg" alt="almohaditas dos salvados">
-                </a>
-
-                <span class="tipo">Almohaditas Dos Salvados</span>
-                <span class="precio"><b>$474</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 4 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/cereales-y-derivados-10/almohaditas-sabor-avellana-1.jpg" alt="almohaditas sabor avellana">
-                </a>
-
-                <span class="tipo">Almohaditas Sabor Avellana</span>
-                <span class="precio"><b>$299</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 5 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/cereales-y-derivados-10/almohaditas-sabor-chocolate-1.jpg" alt="almohaditas sabor chocolate">
-                </a>
-
-                <span class="tipo">Almohaditas Sabor Chocolate</span>
-                <span class="precio"><b>$351</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 6 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/cereales-y-derivados-10/almohaditas-sabor-frutilla-1.jpg" alt="almohaditas sabor frutilla">
-                </a>
-
-                <span class="tipo">Almohaditas Sabor Frutilla</span>
-                <span class="precio"><b>$299</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 7 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/cereales-y-derivados-10/almohaditas-sabor-limon-1.jpg" alt="almohaditas sabor limon">
-                </a>
-
-                <span class="tipo">Almohaditas Sabor Limón</span>
-                <span class="precio"><b>$299</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 8 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/cereales-y-derivados-10/aritos-frutales-1.jpg" alt="aritos frutales">
-                </a>
-
-                <span class="tipo">Aritos Frutales</span>
-                <span class="precio"><b>$225</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 9 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/cereales-y-derivados-10/avena-instantanea-1.jpg" alt="avena instantánea">
-                </a>
-
-                <span class="tipo">Avena Instantánea</span>
-                <span class="precio"><b>$90</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 10 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/otros-3/banana-chips-1.jpg" alt="chips de banana">
-                </a>
-
-                <span class="tipo">Banana Chips</span>
-                <span class="precio"><b>$717</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 11 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/cereales-y-derivados-10/bolitas-de-chocolate-1.jpg" alt="bolitas de chocolate">
-                </a>
-
-                <span class="tipo">Bolitas de Chocolate</span>
-                <span class="precio"><b>$241</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 12 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/frutos-secos-8/castañas-de-caju-1.jpg" alt="castañas de cajú">
-                </a>
-
-                <span class="tipo">Castañas de Cajú</span>
-                <span class="precio"><b>$1.104</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 13 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/otros-3/coco-rallado-1.jpg" alt="coco rallado">
-                </a>
-
-                <span class="tipo">Coco Rallado</span>
-                <span class="precio"><b>$319</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 14 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/cereales-y-derivados-10/copos-con-azucar-1.jpg" alt="copos con azúcar">
-                </a>
-
-                <span class="tipo">Copos Con Azúcar</span>
-                <span class="precio"><b>$156</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 15 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/cereales-y-derivados-10/copos-sin-azucar-1.jpg" alt="copos sin azúcar">
-                </a>
-
-                <span class="tipo">Copos Sin Azúcar</span>
-                <span class="precio"><b>$142</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 16 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/granolas-3/granola-energetica-1.jpg" alt="granola energética">
-                </a>
-
-                <span class="tipo">Granola Energética</span>
-                <span class="precio"><b>$268</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 17 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/granolas-3/granola-patagonica-1.jpg" alt="granola patagónica">
-                </a>
-
-                <span class="tipo">Granola Patagónica</span>
-                <span class="precio"><b>$386</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 18 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/frutos-secos-8/mani-con-cascara-1.jpg" alt="maní con cáscara">
-                </a>
-
-                <span class="tipo">Maní Con Cáscara</span>
-                <span class="precio"><b>$740</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 19 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/frutos-secos-8/mani-japones-sabor-jamon-1.jpg" alt="maní japonés sabor jamon">
-                </a>
-
-                <span class="tipo">Maní Japonés Sabor Jamón</span>
-                <span class="precio"><b>$241</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 20 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/frutos-secos-8/mani-tostado-salado-1.jpg" alt="maní tostado salado">
-                </a>
-
-                <span class="tipo">Maní Tostado Salado</span>
-                <span class="precio"><b>$179</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 21 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/frutos-secos-8/mani-tostado-sin-sal-1.jpg" alt="maní tostado sin sal">
-                </a>
-
-                <span class="tipo">Maní Tostado Sin Sal</span>
-                <span class="precio"><b>$173</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 22 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/mixes-11/mix-42k-1.jpg" alt="mix 42k">
-                </a>
-
-                <span class="tipo">Mix 42K</span>
-                <span class="precio"><b>$1.132</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 23 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/mixes-11/mix-kdt-1.jpg" alt="mix kdt">
-                </a>
-
-                <span class="tipo">Mix KDT</span>
-                <span class="precio"><b>$504</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 24 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/mixes-11/mix-patagonico-1.jpg" alt="mix patagonico">
-                </a>
-
-                <span class="tipo">Mix Patagónico</span>
-                <span class="precio"><b>$710</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 25 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/mixes-11/mix-power-up-1.jpg" alt="mix porwer up">
-                </a>
-
-                <span class="tipo">Mix Power Up</span>
-                <span class="precio"><b>$402</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 26 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/mixes-11/mix-power-up-full-1.jpg" alt="mix porwer up full">
-                </a>
-
-                <span class="tipo">Mix Power Up Full</span>
-                <span class="precio"><b>$488</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 27 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/mixes-11/mix-runner-1.jpg" alt="mix runner">
-                </a>
-
-                <span class="tipo">Mix Runner</span>
-                <span class="precio"><b>$692</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 28 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/mixes-11/mix-salado-1.jpg" alt="mix salado">
-                </a>
-
-                <span class="tipo">Mix Salado</span>
-                <span class="precio"><b>$273</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 29 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/mixes-11/mix-semillas-1.jpg" alt="mix semillas">
-                </a>
-
-                <span class="tipo">Mix Semillas</span>
-                <span class="precio"><b>$220</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 30 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/mixes-11/mix-sport-1.jpg" alt="mix sport">
-                </a>
-
-                <span class="tipo">Mix Sport</span>
-                <span class="precio"><b>$491</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 31 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/mixes-11/mix-sport-full-1.jpg" alt="mix sport full">
-                </a>
-
-                <span class="tipo">Mix Sport Full</span>
-                <span class="precio"><b>$577</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 32 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/mixes-11/mix-tropical-1.jpg" alt="mix tropical">
-                </a>
-
-                <span class="tipo">Mix Tropical</span>
-                <span class="precio"><b>$590</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-
-            <!-- producto 33 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/frutos-secos-8/nuez-mariposa-extra-light-1.jpg" alt="nuez mariposa extra light">
-                </a>
-
-                <span class="tipo">Nuez Mariposa Extra Light</span>
-                <span class="precio"><b>$1.263</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 34 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/pasas-5/pasas-de-arandanos-1.jpg" alt="pasas de arandanos">
-                </a>
-
-                <span class="tipo">Pasas de Arándanos</span>
-                <span class="precio"><b>$973</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 35 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/pasas-5/pasas-de-ciruela-bombon-1.jpg" alt="pasas de ciruela bombon">
-                </a>
-
-                <span class="tipo">Pasas de Ciruela Bombón</span>
-                <span class="precio"><b>$1.005</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 36 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/pasas-5/pasas-de-uva-jumbo-1.jpg" alt="pasas de uva jumbo">
-                </a>
-
-                <span class="tipo">Pasas de Uva Jumbo</span>
-                <span class="precio"><b>$1.013</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 37 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/pasas-5/pasas-de-uva-morochas-1.jpg" alt="pasas de uva morochas">
-                </a>
-
-                <span class="tipo">Pasas de Uva Morochas</span>
-                <span class="precio"><b>$205</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 38 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/pasas-5/pasas-de-uva-rubias-1.jpg" alt="pasas de uva rubias">
-                </a>
-
-                <span class="tipo">Pasas de Uva Rubias</span>
-                <span class="precio"><b>$305</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 39 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/otros-3/rebozador-saludable-1.jpg" alt="rebozado saludable">
-                </a>
-
-                <span class="tipo">Rebozado Saludable</span>
-                <span class="precio"><b>$179</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 40 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/semillas-4/semillas-de-girasol-1.jpg" alt="semillas de girasol">
-                </a>
-
-                <span class="tipo">Semillas de Girasol</span>
-                <span class="precio"><b>$217</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 41 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/semillas-4/semillas-de-lino-1.jpg" alt="semillas de lino">
-                </a>
-
-                <span class="tipo">Semillas de Lino</span>
-                <span class="precio"><b>$158</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 42 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/semillas-4/semillas-de-sesamo-1.jpg" alt="semillas de sésamo">
-                </a>
-
-                <span class="tipo">Semillas de Sésamo</span>
-                <span class="precio"><b>$206</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-            
-            <!-- producto 43 -->
-            
-            <div class="producto">
-                <a href="#!">
-                    <img src="../assets/images/productos/semillas-4/semillas-de-zapallo-1.jpg" alt="semillas de zapallo">
-                </a>
-
-                <span class="tipo">Semillas de Zapallo</span>
-                <span class="precio"><b>$817</b></span>
-
-                <div class="botones">
-                    <a href="#!" class="agregar"><b>AGREGAR</b></a>
-                    
-                    <a href="detalle-producto.html" class="ver"><i class="fas fa-eye"></i><b>VER</b></a>
-                </div>
-            </div>
-
         </div>
     </main>
 
@@ -951,7 +983,7 @@
             </div>
         </div>
 
-        <span class="copy">Megasemilla © 2021 - Mendoza - Argentina</span>
+        <span class="copyright">Megasemilla © 2021 - Mendoza - Argentina</span>
     </footer>
 </body>
 

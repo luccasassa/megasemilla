@@ -4,23 +4,23 @@
     background-color: rgba(108, 88, 76, 0.3);
 }
 
-/* <SCROLLBAR */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 5px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: $color-3;
     // border-radius: 30px;
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
     background: $color-4;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background: inherit;
     box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 }
-/* SCROLLBAR/> */
-
 
 header {
     width: 100%;
@@ -234,7 +234,7 @@ nav {
 
 body {
     margin: 0;
-    font-family: "monserrat";
+    font-family: "monserrat-bold";
     scroll-behavior: smooth;
 }
 
@@ -337,7 +337,7 @@ footer {
         }
     }
 
-    .copy {
+    .copyright {
         display: block;
         background: #f7f7f7;
         padding: 5px;

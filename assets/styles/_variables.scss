@@ -5,11 +5,31 @@ $color-4: #6c584c;
 $color-5: #241407;
 
 @font-face {
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-family: "monserrat-bold";
+}
+
+@font-face {
+    src: url("../fonts/Montserrat-Light.ttf");
+    font-family: "monserrat-light";
+}
+
+@font-face {
     src: url("../fonts/Montserrat-Regular.ttf");
-    font-family: "monserrat";
+    font-family: "monserrat-regular";
+}
+
+@font-face {
+    src: url("../fonts/Poppins-Bold.ttf");
+    font-family: "poppins-bold";
+}
+
+@font-face {
+    src: url("../fonts/Poppins-Light.ttf");
+    font-family: "poppins-light";
 }
 
 @font-face {
     src: url("../fonts/Poppins-Regular.ttf");
-    font-family: "poppins";
+    font-family: "poppins-regular";
 }
