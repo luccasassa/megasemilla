@@ -6,7 +6,7 @@
     cursor: $flechita;
 }
 
-main {
+.main-index {
     .sliders-caja {
         width: 100%;
         margin: 0;
@@ -22,7 +22,7 @@ main {
                 text-align: left;
                 font-size: 0;
                 animation: 30s slidy infinite;
-                
+
                 img {
                     width: 20%;
                     float: left;
@@ -33,27 +33,35 @@ main {
                 0% {
                     left: 0%;
                 }
+
                 20% {
                     left: 0%;
                 }
+
                 25% {
                     left: -100%;
                 }
+
                 45% {
                     left: -100%;
                 }
+
                 50% {
                     left: -200%;
                 }
+
                 70% {
                     left: -200%;
                 }
+
                 75% {
                     left: -300%;
                 }
+
                 95% {
                     left: -300%;
                 }
+
                 100% {
                     left: -400%;
                 }
@@ -102,15 +110,15 @@ main {
                     0% {
                         top: 0;
                     }
-                
+
                     25% {
                         top: -4rem;
                     }
-                
+
                     50% {
                         top: -8rem;
                     }
-                
+
                     72.5% {
                         top: -12.25rem;
                     }
@@ -148,7 +156,7 @@ main {
     .producto-caja {
         width: 90%;
         margin: 50px auto 100px auto;
-        
+
         h1 {
             text-align: center;
             color: $color-5;
@@ -156,26 +164,23 @@ main {
         }
 
         .producto-triple {
-            width: 70%;
+            width: 80%;
             margin: auto;
-            
+
             display: grid;
             justify-content: center;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(1, 1fr);
+            grid-gap: 1.875rem;
 
             .producto-item {
                 display: flex;
                 flex-direction: column;
-                margin: 0 30px;
-                width: 350px;
-                border-radius: 10px;
+                margin: 0 1.875rem;
+                width: 90%;
+                border-radius: .625rem;
                 box-shadow: 1px 10px 15px rgba(0, 0, 0, .7);
                 transition: transform .5s;
-
-                &:hover {
-                    transform: scale(1.1);
-                }
 
                 img {
                     width: 100%;
@@ -185,11 +190,15 @@ main {
 
                 span {
                     font-size: 1.5rem;
-                    padding: 15px;
+                    padding: .9375rem;
                     text-align: center;
                     border-radius: 0 0 10px 10px;
                     color: $color-4;
                     background-color: $color-1;
+                }
+
+                &:hover {
+                    transform: scale(1.07);
                 }
             }
         }

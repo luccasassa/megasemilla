@@ -1,6 +1,6 @@
 @import "variables";
 
-.main-crear-cuenta {
+.main-cuenta {
     .titulo {
         width: 100%;
         margin: auto;
@@ -22,7 +22,7 @@
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid $color-5;
-        font-family: "poppins";
+        font-family: "poppins-regular";
         font-size: 1rem;
 
         @keyframes typing {
@@ -58,7 +58,7 @@
                 &:focus~label,
                 &:valid~label {
                     top: -20px;
-                    color: $color-1;
+                    color: $color-2;
                     font-size: 12px;
                 }
             }
@@ -73,12 +73,44 @@
                 transition: .7s;
             }
         }
+
+        .boton-cuenta {
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+
+            button {
+                padding: 12px;
+                background-color: #fff;
+                border: 1px solid $color-4;
+                border-radius: 5px;
+                color: $color-4;
+                font-family: "monserrat-bold";
+                text-align: center;
+                font-size: 1.1rem;
+                font-weight: 700;
+                transition: .2s;
+
+                &:hover {
+                    background-color: $color-4;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    cursor: pointer;
+                }
+
+                &:active {
+                    background-color: $color-1;
+                    color: $color-5;
+                    border: 1px solid $color-5;
+                }
+            }
+        }
     }
 
     .pie-registro {
         display: block;
         text-align: center;
-        margin-top: 50px;
+        margin: 0 auto 50px auto;
 
         .link {
             color: inherit;
@@ -101,13 +133,14 @@
 
             &::before {
                 content: "Click";
+                position: absolute;
+                font-family: "poppins-bold";
                 font-size: 0.9em;
                 background: #000;
                 color: #fff;
                 line-height: 1em;
                 padding: 0.2em 0.15em 0;
                 border-radius: 0.2em;
-                position: absolute;
                 top: -1.5em;
                 left: 50%;
                 opacity: 0;
@@ -118,6 +151,7 @@
             &::after {
                 content: "acá!";
                 position: absolute;
+                font-family: "poppins-bold";
                 font-size: 0.9em;
                 background: #000;
                 color: #fff;

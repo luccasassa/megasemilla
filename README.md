@@ -17,4 +17,10 @@ Actividad (
         - "SEO" aplicado;
         - "Mixin" ('complexion-caja' en '_index.scss') aplicado;
         - "Extend" ('%link-detalle-producto' en '_detalle-producto.scss') aplicado;
+
+    14/1: trabajo rehecho por el tema del responsive (PROBLEMÓN);
+
+    16/1: Presupuesto creado;
+
+    18/1: responsive terminado (adaptado a mobile únicamente);
 )
