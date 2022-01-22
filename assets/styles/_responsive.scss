@@ -225,6 +225,11 @@
             .dato {
                 input, label {
                     font-size: .7rem;
+
+                    &:focus~label,
+                    &:valid~label {
+                        font-size: .5rem;
+                    }
                 }
             }
             .boton-cuenta {
@@ -412,9 +417,10 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 10px;
-
+        
         .buscar {
             margin: auto;
+            margin-top: 5px;
         }
         .banner {
             img {
@@ -495,8 +501,10 @@
             }
 
             .footer-pagos {
+                grid-gap: 5px;
+
                 img {
-                    width: 8px;
+                    width: 15px;
                 }
             }
 
