@@ -1285,61 +1285,6 @@ footer {
 /* ------------------ 480 ------------------ */
 /* ------------------ 480 ------------------ */
 @media screen and (max-width: 480px) {
-  /**************** STATIC ****************/
-  header .buscar input {
-    font-size: 8px; }
-  header .buscar button {
-    font-size: 8px; }
-  nav .menu {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: none;
-    align-items: none; }
-    nav .menu li {
-      width: 100%;
-      font-size: 10px;
-      padding: 0;
-      font-weight: 0;
-      line-height: 0; }
-      nav .menu li a {
-        font-size: 10px;
-        padding: 0;
-        font-weight: 0; }
-      nav .menu li .submenu li {
-        width: 100%;
-        font-size: 10px;
-        padding: 0;
-        font-weight: 0;
-        line-height: 0; }
-        nav .menu li .submenu li a {
-          font-size: 10px;
-          padding: 0;
-          font-weight: 0; }
-  footer .footer-container-1 div span {
-    font-size: 8px; }
-  footer .footer-container-2 ul li a {
-    font-size: 8px; }
-  footer .footer-container-2 .footer-social ul li {
-    margin: 0 0 2px 0;
-    font-size: 5px; }
-    footer .footer-container-2 .footer-social ul li a i {
-      padding-right: 4px; }
-  footer .footer-container-2 .footer-pagos img {
-    width: 8px; }
-  footer .footer-container-2 .footer-contactanos ul li {
-    margin: 0 0 2px 0;
-    font-size: 15px; }
-  footer .footer-container-2 .footer-contactanos ul a i {
-    padding-right: 4px; }
-  footer .copyright {
-    font-size: 8px; } }
-
-/* ------------------ 720 ------------------ */
-/* ------------------ 720 ------------------ */
-/* ------------------ 720 ------------------ */
-@media screen and (max-width: 720px) {
   /**************** CONTACTO ****************/
   .main-contacto .container-contacto {
     display: flex;
@@ -1378,6 +1323,56 @@ footer {
     font-size: .8rem; }
   .main-cuenta .pie-registro {
     font-size: .8rem; }
+  /**************** PRODUCTOS ****************/
+  .main-productos h1 {
+    font-size: 1.5rem; }
+  .main-productos .container-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .main-productos .container-productos .filtros {
+      display: flex;
+      justify-content: space-around;
+      font-size: .7rem; }
+      .main-productos .container-productos .filtros .cat-li, .main-productos .container-productos .filtros .filt-li {
+        margin: auto;
+        display: block;
+        padding: 0; }
+    .main-productos .container-productos .stock {
+      grid-template-columns: repeat(2, 1fr); }
+      .main-productos .container-productos .stock .producto {
+        width: 150px; }
+        .main-productos .container-productos .stock .producto .botones {
+          flex-direction: column;
+          padding: 5px 0; }
+          .main-productos .container-productos .stock .producto .botones a {
+            margin: 5px auto;
+            padding: 5px 0; }
+          .main-productos .container-productos .stock .producto .botones .agregar,
+          .main-productos .container-productos .stock .producto .botones .ver {
+            font-size: .7rem; }
+  /**************** DETALLE PRODUCTO ****************/
+  .main-detalle-producto {
+    width: 90%;
+    flex-direction: column; }
+    .main-detalle-producto .producto-vista-previa {
+      margin: auto; }
+      .main-detalle-producto .producto-vista-previa label {
+        display: inline-block; }
+    .main-detalle-producto .producto-carrusel {
+      width: 300px;
+      height: 200px;
+      margin: 40px auto 60px auto; }
+      .main-detalle-producto .producto-carrusel ul {
+        height: 200px; }
+        .main-detalle-producto .producto-carrusel ul li .slide-img img {
+          width: 300px;
+          height: 200px; }
+    .main-detalle-producto .producto-datos form button {
+      padding: 0;
+      font-size: 8px; }
+  .descripcion-producto {
+    margin: 50px auto; }
   /**************** INDEX ****************/
   .main-index .descuento h1 {
     font-size: 2.125rem; }
@@ -1415,104 +1410,53 @@ footer {
     .main-index .producto-caja .producto-triple .producto-item {
       margin: auto; }
   /**************** STATIC ****************/
-  header .buscar input {
-    width: 150px;
-    padding: 5px; }
-  header .buscar button {
-    width: 20px;
-    padding: 0; }
-  header .banner img {
-    width: 80%; }
-  header .carrito-cuenta .carrito {
-    padding: 5px 0;
-    font-size: 12px; }
-  header .carrito-cuenta .cuenta {
-    padding: 5px 0;
-    font-size: 8px; }
+  header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px; }
+    header .buscar {
+      margin: auto; }
+    header .banner img {
+      width: 100%; }
   nav {
+    width: 100%;
     position: relative; }
     nav .menu {
-      width: 80%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(1, 1fr);
+      width: 100%;
       text-align: center;
-      justify-content: center;
-      align-items: center; }
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
       nav .menu li {
-        line-height: 0;
+        width: 100%;
         padding: 0;
-        font-size: 12px;
-        padding: 0; }
-        nav .menu li .submenu li a {
-          font-size: 10px;
+        font-weight: 0;
+        line-height: 0; }
+        nav .menu li a {
+          font-size: .9rem;
           padding: 0;
           font-weight: 0; }
+        nav .menu li .submenu {
+          width: 80%; }
+          nav .menu li .submenu li a {
+            font-size: .9rem;
+            padding: 0;
+            font-weight: 0; }
   footer .footer-container-1 div span {
-    font-size: 10px; }
+    font-size: 8px; }
   footer .footer-container-2 ul li a {
-    font-size: 10px; }
+    font-size: 8px; }
+  footer .footer-container-2 .footer-social ul li {
+    margin: 0 0 2px 0;
+    font-size: 5px; }
+    footer .footer-container-2 .footer-social ul li a i {
+      padding-right: 4px; }
   footer .footer-container-2 .footer-pagos img {
-    width: 15px; }
+    width: 8px; }
+  footer .footer-container-2 .footer-contactanos ul li {
+    margin: 0 0 2px 0;
+    font-size: 5px; }
+  footer .footer-container-2 .footer-contactanos ul a i {
+    padding-right: 4px; }
   footer .copyright {
-    font-size: 10px; } }
-
-/* ------------------ 1080 ------------------ */
-/* ------------------ 1080 ------------------ */
-/* ------------------ 1080 ------------------ */
-@media screen and (max-width: 1080px) {
-  /**************** DETALLE PRODUCTO ****************/
-  .main-detalle-producto {
-    flex-direction: column; }
-    .main-detalle-producto .producto-vista-previa {
-      margin: auto; }
-      .main-detalle-producto .producto-vista-previa label {
-        display: inline-block; }
-    .main-detalle-producto .producto-carrusel {
-      margin: 40px auto 60px auto; }
-    .main-detalle-producto .producto-datos {
-      margin: auto; }
-  .descripcion-producto {
-    margin: 50px auto; }
-  /**************** PRODUCTOS ****************/
-  .main-productos h1 {
-    font-size: 1.5rem; }
-  .main-productos .container-productos .filtros {
-    font-size: .7rem; }
-    .main-productos .container-productos .filtros ul {
-      padding: 0; }
-  .main-productos .container-productos .stock {
-    grid-template-columns: repeat(1, 1fr); }
-    .main-productos .container-productos .stock .producto {
-      width: 150px; }
-      .main-productos .container-productos .stock .producto .botones {
-        flex-direction: column;
-        padding: 5px 0; }
-        .main-productos .container-productos .stock .producto .botones a {
-          margin: 5px auto;
-          padding: 5px 0; }
-        .main-productos .container-productos .stock .producto .botones .agregar,
-        .main-productos .container-productos .stock .producto .botones .ver {
-          font-size: .7rem; }
-  /**************** STATIC ****************/
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  nav .menu {
-    width: 90%; }
-    nav .menu li {
-      line-height: 0;
-      padding: 0;
-      font-size: 13px;
-      padding: 0; } }
-
-/* ------------------ 1300 ------------------ */
-/* ------------------ 1300 ------------------ */
-/* ------------------ 1300 ------------------ */
-@media screen and (max-width: 1300px) {
-  /**************** STATIC ****************/
-  nav {
-    width: 100%; }
-    nav .menu li {
-      font-size: .8rem; } }
+    font-size: 8px; } }
