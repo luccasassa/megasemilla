@@ -943,10 +943,11 @@ footer {
   .main-contacto .container-contacto .datos-contacto {
     margin: 5px;
     padding: 10px; }
-    .main-contacto .container-contacto .datos-contacto h1 {
+    .main-contacto .container-contacto .datos-contacto h2 {
       display: flex;
       justify-content: center;
-      color: #6c584c; }
+      color: #6c584c;
+      cursor: default; }
     .main-contacto .container-contacto .datos-contacto ul {
       margin-top: 35px;
       display: grid;
@@ -968,10 +969,11 @@ footer {
   .main-contacto .container-contacto .formulario-contacto {
     margin: 5px;
     padding: 10px; }
-    .main-contacto .container-contacto .formulario-contacto h1 {
+    .main-contacto .container-contacto .formulario-contacto h2 {
       display: flex;
       justify-content: center;
-      color: #6c584c; }
+      color: #6c584c;
+      cursor: default; }
     .main-contacto .container-contacto .formulario-contacto form {
       max-width: 600px;
       text-align: center;
@@ -1158,7 +1160,7 @@ footer {
 .main-index .producto-caja {
   width: 90%;
   margin: 50px auto 100px auto; }
-  .main-index .producto-caja h1 {
+  .main-index .producto-caja h2 {
     text-align: center;
     color: #241407;
     cursor: default; }
@@ -1292,7 +1294,7 @@ footer {
     justify-content: space-around; }
     .main-contacto .container-contacto .datos-contacto {
       margin: auto; }
-      .main-contacto .container-contacto .datos-contacto h1 {
+      .main-contacto .container-contacto .datos-contacto h2 {
         font-size: 1.5rem; }
       .main-contacto .container-contacto .datos-contacto ul {
         display: flex;
@@ -1406,7 +1408,7 @@ footer {
     .main-index .info-caja .info-solo span {
       text-align: left;
       font-size: .5rem; }
-  .main-index .producto-caja h1 {
+  .main-index .producto-caja h2 {
     font-size: 1.5rem; }
   .main-index .producto-caja .producto-triple {
     display: flex;
