@@ -18,9 +18,11 @@ Actividad (
         - "Mixin" ('complexion-caja' en '_index.scss') aplicado;
         - "Extend" ('%link-detalle-producto' en '_detalle-producto.scss') aplicado;
 
-    14/1: trabajo rehecho por el tema del responsive (PROBLEMÓN);
+    15/1: proyecto rehecho por problemas con responsive (no se aplicaban ciertas propiedades de estilo en ciertas media query);
 
-    16/1: Presupuesto creado;
+    17/1: Presupuesto creado;
 
-    18/1: responsive terminado (adaptado a mobile únicamente);
+    21/1:
+        responsive terminado (adaptado a mobile únicamente -> max-width: 320px y 480px);
+        (sigo teniendo problemas para agregar más de 2 media query);
 )

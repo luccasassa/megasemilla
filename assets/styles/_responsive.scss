@@ -147,129 +147,6 @@
 
 @media screen and (max-width: 480px) {
 
-    /**************** STATIC ****************/
-
-    header {
-        .buscar {
-
-            input {
-                font-size: 8px;
-            }
-
-            button {
-                font-size: 8px;
-            }
-        }
-    }
-
-    nav {
-        .menu {
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: none;
-            align-items: none;
-
-            li {
-                width: 100%;
-                font-size: 10px;
-                padding: 0;
-                font-weight: 0;
-                line-height: 0;
-
-                a {
-                    font-size: 10px;
-                    padding: 0;
-                    font-weight: 0;
-                }
-
-                .submenu {
-                    li {
-                        width: 100%;
-                        font-size: 10px;
-                        padding: 0;
-                        font-weight: 0;
-                        line-height: 0;
-
-                        a {
-                            font-size: 10px;
-                            padding: 0;
-                            font-weight: 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    footer {
-        .footer-container-1 {
-            div {
-                span {
-                    font-size: 8px;
-                }
-            }
-        }
-
-        .footer-container-2 {
-            ul {
-                li {
-                    a {
-                        font-size: 8px;
-                    }
-                }
-            }
-
-            .footer-social {
-                ul {
-                    li {
-                        margin: 0 0 2px 0;
-                        font-size: 5px;
-
-                        a {
-                            i {
-                                padding-right: 4px;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .footer-pagos {
-                img {
-                    width: 8px;
-                }
-            }
-
-            .footer-contactanos {
-                ul {
-                    li {
-                        margin: 0 0 2px 0;
-                        font-size: 15px;
-                    }
-
-                    a {
-                        i {
-                            padding-right: 4px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .copyright {
-            font-size: 8px;
-        }
-    }
-}
-
-/* ------------------ 720 ------------------ */
-/* ------------------ 720 ------------------ */
-/* ------------------ 720 ------------------ */
-
-@media screen and (max-width: 720px) {
-
     /**************** CONTACTO ****************/
     
     .main-contacto {
@@ -361,6 +238,100 @@
         }
     }
 
+    /**************** PRODUCTOS ****************/
+    
+    .main-productos {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .container-productos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .filtros {
+                display: flex;
+                justify-content: space-around;
+                font-size: .7rem;
+                
+                .cat-li, .filt-li {
+                    margin: auto;
+                    display: block;
+                    padding: 0;
+                }
+            }
+
+            .stock {
+                grid-template-columns: repeat(2, 1fr);
+
+                .producto {
+                    width: 150px;
+
+                    .botones {
+                        flex-direction: column;
+                        padding: 5px 0;
+
+                        a {
+                            margin: 5px auto;
+                            padding: 5px 0;
+                        }
+
+                        .agregar,
+                        .ver {
+                            font-size: .7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /**************** DETALLE PRODUCTO ****************/
+    
+    .main-detalle-producto {
+        width: 90%;
+        flex-direction: column;
+
+        .producto-vista-previa {
+            margin: auto;
+
+            label {
+                display: inline-block;
+            }
+        }
+        .producto-carrusel {
+            width: 300px;
+            height: 200px;
+            margin: 40px auto 60px auto;
+
+            ul {
+                height: 200px;
+
+                li {
+                    .slide-img {
+                        img {
+                            width: 300px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .producto-datos {
+            form {
+                button {
+                    padding: 0;
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+    .descripcion-producto {
+        margin: 50px auto;
+    }
+
     /**************** INDEX ****************/
 
     .main-index {
@@ -438,58 +409,49 @@
     /**************** STATIC ****************/
 
     header {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+
         .buscar {
-            input {
-                width: 150px;
-                padding: 5px;
-            }
-
-            button {
-                width: 20px;
-                padding: 0;
-            }
+            margin: auto;
         }
-
         .banner {
             img {
-                width: 80%;
-            }
-        }
-
-        .carrito-cuenta {
-            .carrito {
-                padding: 5px 0;
-                font-size: 12px;
-            }
-            .cuenta {
-                padding: 5px 0;
-                font-size: 8px;
+                width: 100%;
             }
         }
     }
 
     nav {
+        width: 100%;
         position: relative;
-
+        
         .menu {
-            width: 80%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(1, 1fr);
+            width: 100%;
             text-align: center;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
 
             li {
+                width: 100%;
+                padding: 0;
+                font-weight: 0;
                 line-height: 0;
-                padding: 0;
-                font-size: 12px;
-                padding: 0;
-
+                
+                a {
+                    font-size: .9rem;
+                    padding: 0;
+                    font-weight: 0;
+                }
+                
                 .submenu {
+                    width: 80%;
+                    
                     li {
                         a {
-                            font-size: 10px;
+                            font-size: .9rem;
                             padding: 0;
                             font-weight: 0;
                         }
@@ -498,12 +460,12 @@
             }
         }
     }
-    
+
     footer {
         .footer-container-1 {
             div {
                 span {
-                    font-size: 10px;
+                    font-size: 8px;
                 }
             }
         }
@@ -512,132 +474,50 @@
             ul {
                 li {
                     a {
-                        font-size: 10px;
+                        font-size: 8px;
+                    }
+                }
+            }
+
+            .footer-social {
+                ul {
+                    li {
+                        margin: 0 0 2px 0;
+                        font-size: 5px;
+
+                        a {
+                            i {
+                                padding-right: 4px;
+                            }
+                        }
                     }
                 }
             }
 
             .footer-pagos {
                 img {
-                    width: 15px;
+                    width: 8px;
                 }
             }
-        }
 
-        .copyright {
-            font-size: 10px;
-        }
-    }
-}
-
-/* ------------------ 1080 ------------------ */
-/* ------------------ 1080 ------------------ */
-/* ------------------ 1080 ------------------ */
-
-@media screen and (max-width: 1080px) {
-
-    /**************** DETALLE PRODUCTO ****************/
-    
-    .main-detalle-producto {
-        flex-direction: column;
-
-        .producto-vista-previa {
-            margin: auto;
-
-            label {
-                display: inline-block;
-            }
-        }
-        .producto-carrusel {
-            margin: 40px auto 60px auto;
-        }
-
-        .producto-datos {
-            margin: auto;
-        }
-    }
-    .descripcion-producto {
-        margin: 50px auto;
-    }
-
-    /**************** PRODUCTOS ****************/
-    
-    .main-productos {
-        h1 {
-            font-size: 1.5rem;
-        }
-
-        .container-productos {
-            .filtros {
-                font-size: .7rem;
-
+            .footer-contactanos {
                 ul {
-                    padding: 0;
-                }
-            }
+                    li {
+                        margin: 0 0 2px 0;
+                        font-size: 5px;
+                    }
 
-            .stock {
-                grid-template-columns: repeat(1, 1fr);
-
-                .producto {
-                    width: 150px;
-
-                    .botones {
-                        flex-direction: column;
-                        padding: 5px 0;
-
-                        a {
-                            margin: 5px auto;
-                            padding: 5px 0;
-                        }
-
-                        .agregar,
-                        .ver {
-                            font-size: .7rem;
+                    a {
+                        i {
+                            padding-right: 4px;
                         }
                     }
                 }
             }
         }
-    }
 
-    /**************** STATIC ****************/
-    
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    nav {
-        .menu {
-            width: 90%;
-
-            li {
-                line-height: 0;
-                padding: 0;
-                font-size: 13px;
-                padding: 0;
-            }
-        }
-    }
-}
-
-/* ------------------ 1300 ------------------ */
-/* ------------------ 1300 ------------------ */
-/* ------------------ 1300 ------------------ */
-
-@media screen and (max-width: 1300px) {
-
-    /**************** STATIC ****************/
-
-    nav {
-        width: 100%;
-
-        .menu {
-            li {
-                font-size: .8rem;
-            }
+        .copyright {
+            font-size: 8px;
         }
     }
 }
