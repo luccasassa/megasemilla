@@ -3,7 +3,6 @@
 
 ~ CRÉDITOS (propietario): Sassaroli Luca. ~
 
-```
 Actividad ¬
 
     - [x] 4/1: transcribo a SASS los estilos del proyecto;
@@ -26,4 +25,3 @@ Actividad ¬
     - [ ] 21/1: adaptar responsive de 1080 para abajo;
         > responsive terminado (adaptado a mobile únicamente -> max-width: 320px y 480px);
         > (sigo teniendo problemas para agregar más de 2 media query);
-```
